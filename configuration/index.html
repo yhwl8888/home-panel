@@ -364,6 +364,26 @@
     right_indoor
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#label" title="label" class="md-nav__link">
+    label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data_1" title="data" class="md-nav__link">
+    data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -375,6 +395,73 @@
   <a href="#items" title="items" class="md-nav__link">
     items
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hass" title="hass" class="md-nav__link">
+    hass
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entity_id" title="entity_id" class="md-nav__link">
+    entity_id
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name" title="name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link" title="link" class="md-nav__link">
+    link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera" title="camera" class="md-nav__link">
+    camera
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url" title="url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#still_url" title="still_url" class="md-nav__link">
+    still_url
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -500,6 +587,26 @@
     right_indoor
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#label" title="label" class="md-nav__link">
+    label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data_1" title="data" class="md-nav__link">
+    data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -511,6 +618,73 @@
   <a href="#items" title="items" class="md-nav__link">
     items
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hass" title="hass" class="md-nav__link">
+    hass
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entity_id" title="entity_id" class="md-nav__link">
+    entity_id
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name" title="name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link" title="link" class="md-nav__link">
+    link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera" title="camera" class="md-nav__link">
+    camera
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url" title="url" class="md-nav__link">
+    url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#still_url" title="still_url" class="md-nav__link">
+    still_url
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -631,9 +805,175 @@
 </pre></div>
 
 <h3 id="right_indoor">right_indoor<a class="headerlink" href="#right_indoor" title="Permanent link">&para;</a></h3>
-<p>TBD</p>
+<p>This is an array of grouped sensors which are labelled by a larger set of text.</p>
+<div class="codehilite"><pre><span></span>      <span class="p">{</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dht22_01_temperature&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;°C&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dht22_01_humidity&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;%&quot;</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span><span class="err">,</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Upstairs&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.sn2_temperature&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;°C&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.sn2_humidity&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;%&quot;</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+</pre></div>
+
+<h4 id="label">label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h4>
+<p>Text shown above sensor data.</p>
+<div class="codehilite"><pre><span></span>        <span class="s2">&quot;label&quot;</span><span class="err">:</span> <span class="s2">&quot;Living Room&quot;</span><span class="err">,</span>
+</pre></div>
+
+<h4 id="data_1">data<a class="headerlink" href="#data_1" title="Permanent link">&para;</a></h4>
+<p>This is an array of the <code>entity_id</code>'s that describes the current weather
+ conditions. <code>unit_of_measurement</code> is added onto the end of the
+ sensor's <code>state</code>.</p>
+<div class="codehilite"><pre><span></span>        <span class="s2">&quot;data&quot;</span><span class="err">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dht22_01_temperature&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;°C&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dht22_01_humidity&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;%&quot;</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+</pre></div>
+
 <h2 id="items">items<a class="headerlink" href="#items" title="Permanent link">&para;</a></h2>
-<p>TBD</p>
+<p>The main view. Where all the cards, cameras, links etc. go. First give the
+ group of cards a name, then add what you want. See below for the avalible
+ types of cards.</p>
+<div class="codehilite"><pre><span></span>  <span class="s2">&quot;items&quot;</span><span class="err">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Scenes&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;cards&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.reset_lights&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.reset_kitchen_lights&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.lights_on&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.lights_off&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.all_lights_on&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Night/Film Mode&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.night_mode&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;cards&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;light.setee_light&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;light.tv_light&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Links/Cameras&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;cards&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;link&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Shinobi&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;camera&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Office&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;still_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/jpeg/groupid/name/s.jpg&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/mjpeg/groupid/name&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+</pre></div>
+
+<h3 id="hass">hass<a class="headerlink" href="#hass" title="Permanent link">&para;</a></h3>
+<p>This is the default type of card. You do not need to set the <code>type</code> here as
+ the app defaults to this.</p>
+<div class="codehilite"><pre><span></span>        <span class="p">{</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;light.tv_light&quot;</span>
+        <span class="p">}</span><span class="err">,</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Night/Film Mode&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.night_mode&quot;</span>
+        <span class="p">}</span>
+</pre></div>
+
+<h4 id="entity_id">entity_id<a class="headerlink" href="#entity_id" title="Permanent link">&para;</a></h4>
+<p>The <code>entity_id</code> of the <a href="https://www.home-assistant.io/">HASS</a> entity. Switches and lights act as buttons
+ which can be toggled on and off and scenes, scripts etc. act as
+ non-toggleable buttons. Lights can also be clicked and held / long pressed to
+ set brightness, temperature, effect, color etc. in a more info dialog.</p>
+<div class="codehilite"><pre><span></span>          <span class="s2">&quot;entity_id&quot;</span><span class="err">:</span> <span class="s2">&quot;light.tv_light&quot;</span>
+</pre></div>
+
+<p><img alt="More Info Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info.png" /></p>
+<h4 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h4>
+<p>The name is automatically pulled from <a href="https://www.home-assistant.io/">HASS</a>, but you can set a custom
+ name if you like.</p>
+<div class="codehilite"><pre><span></span>          <span class="s2">&quot;name&quot;</span><span class="err">:</span> <span class="s2">&quot;Night/Film Mode&quot;</span><span class="err">,</span>
+</pre></div>
+
+<h3 id="link">link<a class="headerlink" href="#link" title="Permanent link">&para;</a></h3>
+<p>A simple hyperlink that opens up another webpage in a new tab/window. To
+ create a link, you must set the <code>type</code> to <code>link</code>. You can then set the <code>url</code>
+ and <code>name</code> as appropriate. This looks and acts the same as a normal card.</p>
+<div class="codehilite"><pre><span></span>        <span class="p">{</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;link&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Shinobi&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080&quot;</span>
+        <span class="p">}</span>
+</pre></div>
+
+<h3 id="camera">camera<a class="headerlink" href="#camera" title="Permanent link">&para;</a></h3>
+<p>You can add any camera image supported by your browser. Set the <code>type</code> to
+ <code>camera</code> to use this. Set the <code>name</code> as appropriate. The camera type spans
+ two cards. Clicking on the camera shows the camera's video feed.</p>
+<div class="codehilite"><pre><span></span>        <span class="p">{</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;camera&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Office&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;still_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/jpeg/groupid/name/s.jpg&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/mjpeg/groupid/name&quot;</span>
+        <span class="p">}</span>
+</pre></div>
+
+<h4 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h4>
+<p>The url of the camera feed for use in full screen when the smaller camera card
+ is clicked.</p>
+<div class="codehilite"><pre><span></span>          <span class="s2">&quot;url&quot;</span><span class="err">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/mjpeg/groupid/name&quot;</span>
+</pre></div>
+
+<h4 id="still_url">still_url<a class="headerlink" href="#still_url" title="Permanent link">&para;</a></h4>
+<p>The url of a still image for use in the main view. This updates every minute.</p>
+<div class="codehilite"><pre><span></span>          <span class="s2">&quot;still_url&quot;</span><span class="err">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/jpeg/groupid/name/s.jpg&quot;</span>
+</pre></div>
                 
                   
                 
