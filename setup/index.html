@@ -290,12 +290,52 @@
     Docker Compose
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssl" title="SSL" class="md-nav__link">
+    SSL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-ssl" title="Non-SSL" class="md-nav__link">
+    Non-SSL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#docker" title="Docker" class="md-nav__link">
     Docker
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssl_1" title="SSL" class="md-nav__link">
+    SSL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-ssl_1" title="Non-SSL" class="md-nav__link">
+    Non-SSL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -323,8 +363,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#production-secure" title="Production - Secure" class="md-nav__link">
-    Production - Secure
+  <a href="#production-ssl" title="Production - SSL" class="md-nav__link">
+    Production - SSL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production-non-ssl" title="Production - Non-SSL" class="md-nav__link">
+    Production - Non-SSL
   </a>
   
 </li>
@@ -418,12 +465,52 @@
     Docker Compose
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssl" title="SSL" class="md-nav__link">
+    SSL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-ssl" title="Non-SSL" class="md-nav__link">
+    Non-SSL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#docker" title="Docker" class="md-nav__link">
     Docker
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssl_1" title="SSL" class="md-nav__link">
+    SSL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-ssl_1" title="Non-SSL" class="md-nav__link">
+    Non-SSL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -451,8 +538,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#production-secure" title="Production - Secure" class="md-nav__link">
-    Production - Secure
+  <a href="#production-ssl" title="Production - SSL" class="md-nav__link">
+    Production - SSL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production-non-ssl" title="Production - Non-SSL" class="md-nav__link">
+    Production - Non-SSL
   </a>
   
 </li>
@@ -495,6 +589,7 @@
                 
                 <h1 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h1>
 <h2 id="docker-compose">Docker Compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h2>
+<hr />
 <ul>
 <li>Install <a href="https://www.docker.com/community-edition">Docker</a> and
  <a href="https://docs.docker.com/compose/install/">Docker Compose</a></li>
@@ -502,6 +597,7 @@
 <li>Create a <code>config.json</code> using the template below</li>
 <li>Create a <code>docker-compose.yml</code> file:</li>
 </ul>
+<h3 id="ssl">SSL<a class="headerlink" href="#ssl" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
 <p>This example maps the <code>ssl</code> directory in the home directory.
 Inside this directory are two files <code>fullchain.pem</code> and <code>privkey.pem</code>
@@ -523,7 +619,7 @@ Change the environment variables to your own Home Assistant details</p>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:443</span>
     <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl:/ssl</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">$(pwd)/config.json:/usr/src/app/config.json</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/config.json</span>
   <span class="l l-Scalar l-Scalar-Plain">home-panel-api</span><span class="p p-Indicator">:</span>
     <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel-api</span>
     <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
@@ -534,20 +630,55 @@ Change the environment variables to your own Home Assistant details</p>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl:/ssl</span>
 </pre></div>
 
-<hr />
+<h3 id="non-ssl">Non-SSL<a class="headerlink" href="#non-ssl" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p>This example shows how to set up the app without ssl. This is useful for
+ testing, but is <strong>unsecure</strong>, so don't expose the app to the outside
+ world.</p>
+</div>
+<div class="codehilite"><pre><span></span><span class="nn">---</span>
+<span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&#39;3&#39;</span>
+
+<span class="l l-Scalar l-Scalar-Plain">services</span><span class="p p-Indicator">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">home-panel</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel</span>
+    <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
+      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_HOST</span><span class="p p-Indicator">:</span> <span class="s">&#39;hassioserver.com&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_PASSWORD</span><span class="p p-Indicator">:</span> <span class="s">&#39;supersecurepassword&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_SSL</span><span class="p p-Indicator">:</span> <span class="s">&#39;false&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_API_URL</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://localhost:3123</span>
+    <span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:80</span>
+    <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/config.json</span>
+  <span class="l l-Scalar l-Scalar-Plain">home-panel-api</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel-api</span>
+    <span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3123:3123</span>
+</pre></div>
+
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
+<hr />
 <ul>
 <li>Install <a href="https://www.docker.com/community-edition">Docker</a></li>
 <li>Create a <code>config.json</code> using the template below</li>
 <li>Run image</li>
 </ul>
+<h3 id="ssl_1">SSL<a class="headerlink" href="#ssl_1" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p>This example maps the <code>ssl</code> directory in the home directory.
+Inside this directory are two files <code>fullchain.pem</code> and <code>privkey.pem</code>
+which are files generated by <a href="https://letsencrypt.org/">Let's Encrypt</a>.
+Change the environment variables to your own Home Assistant details</p>
+</div>
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
   -e <span class="nv">REACT_APP_HASS_HOST</span><span class="o">=</span><span class="s1">&#39;hassioserver.com&#39;</span> <span class="se">\</span>
   -e <span class="nv">REACT_APP_HASS_PASSWORD</span><span class="o">=</span><span class="s1">&#39;supersecurepassword&#39;</span> <span class="se">\</span>
   -e <span class="nv">REACT_APP_HASS_SSL</span><span class="o">=</span><span class="s1">&#39;true&#39;</span> <span class="se">\</span>
+  -e <span class="nv">REACT_APP_API_URL</span><span class="o">=</span><span class="s1">&#39;https://localhost:3234&#39;</span> <span class="se">\</span>
   -p <span class="m">8234</span>:443 <span class="se">\</span>
   -v ~/ssl:/ssl <span class="se">\</span>
-  -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/config.json:/usr/src/app/config.json <span class="se">\</span>
+  -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
   timmo001/home-panel
 </pre></div>
 
@@ -558,8 +689,29 @@ Change the environment variables to your own Home Assistant details</p>
   timmo001/home-panel-api
 </pre></div>
 
-<hr />
+<h3 id="non-ssl_1">Non-SSL<a class="headerlink" href="#non-ssl_1" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p>This example shows how to set up the app without ssl. This is useful for
+ testing, but is <strong>unsecure</strong>, so don't expose the app to the outside
+ world.</p>
+</div>
+<div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
+  -e <span class="nv">REACT_APP_HASS_HOST</span><span class="o">=</span><span class="s1">&#39;hassioserver.com&#39;</span> <span class="se">\</span>
+  -e <span class="nv">REACT_APP_HASS_PASSWORD</span><span class="o">=</span><span class="s1">&#39;supersecurepassword&#39;</span> <span class="se">\</span>
+  -e <span class="nv">REACT_APP_HASS_SSL</span><span class="o">=</span><span class="s1">&#39;false&#39;</span> <span class="se">\</span>
+  -e <span class="nv">REACT_APP_API_URL</span><span class="o">=</span><span class="s1">&#39;https://localhost:3123&#39;</span> <span class="se">\</span>
+  -p <span class="m">8234</span>:80 <span class="se">\</span>
+  -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
+  timmo001/home-panel
+</pre></div>
+
+<div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
+  -p <span class="m">3123</span>:3123 <span class="se">\</span>
+  timmo001/home-panel-api
+</pre></div>
+
 <h2 id="node-js">Node JS<a class="headerlink" href="#node-js" title="Permanent link">&para;</a></h2>
+<hr />
 <h3 id="api-setup">API Setup<a class="headerlink" href="#api-setup" title="Permanent link">&para;</a></h3>
 <ul>
 <li>First clone the
@@ -605,7 +757,7 @@ Change the environment variables to your own Home Assistant details</p>
 <div class="codehilite"><pre><span></span>yarn build
 </pre></div>
 
-<h4 id="production-secure">Production - Secure<a class="headerlink" href="#production-secure" title="Permanent link">&para;</a></h4>
+<h4 id="production-ssl">Production - SSL<a class="headerlink" href="#production-ssl" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Install nginx</li>
 <li>Edit your server config <code>/etc/nginx/conf.d/default.conf</code></li>
@@ -632,6 +784,37 @@ Change the environment variables to your own Home Assistant details</p>
  <code>/usr/share/nginx/html</code></li>
 <li>Start your server</li>
 </ul>
+<div class="codehilite"><pre><span></span>nginx -g <span class="s2">&quot;daemon off;&quot;</span>
+</pre></div>
+
+<h4 id="production-non-ssl">Production - Non-SSL<a class="headerlink" href="#production-non-ssl" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p><strong>This option is not secure. Do not open to the outside world!</strong></p>
+</div>
+<ul>
+<li>Install nginx</li>
+<li>Edit your server config <code>/etc/nginx/conf.d/default.conf</code></li>
+</ul>
+<div class="codehilite"><pre><span></span>server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+  root /usr/share/nginx/html;
+  index index.html;
+  server_name 172.0.0.1;
+  location / {
+    try_files \$uri /index.html;
+  }
+}
+</pre></div>
+
+<ul>
+<li>Copy the files in the build folder into nginx's html directory at
+ <code>/usr/share/nginx/html</code></li>
+<li>Start your server</li>
+</ul>
+<div class="codehilite"><pre><span></span>nginx -g <span class="s2">&quot;daemon off;&quot;</span>
+</pre></div>
+
 <h4 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h4>
 <div class="admonition warning">
 <p><strong>This option is not secure. Do not open to the outside world!</strong></p>
