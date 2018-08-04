@@ -729,6 +729,9 @@
 </pre></div>
 
 <h2 id="header">header<a class="headerlink" href="#header" title="Permanent link">&para;</a></h2>
+<p>This section can display weather and other sensor information in the top
+ section of the app alongside the time and date.</p>
+<p><img alt="Header Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/header.png" /></p>
 <div class="codehilite"><pre><span></span>  <span class="s2">&quot;header&quot;</span><span class="err">:</span> <span class="p">{</span>
     <span class="nt">&quot;left_outdoor_weather&quot;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&quot;dark_sky_icon&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dark_sky_icon&quot;</span><span class="p">,</span>
@@ -778,6 +781,7 @@
 <h3 id="left_outdoor_weather">left_outdoor_weather<a class="headerlink" href="#left_outdoor_weather" title="Permanent link">&para;</a></h3>
 <p>This section is used for setting the <code>entity_id</code>'s of weather sensors.
  These are meant for outdoor sensors, but can be anything that has a <code>state</code>.</p>
+<p><img alt="Left Outdoor Weather Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/weather-left.png" /></p>
 <h4 id="dark_sky_icon">dark_sky_icon<a class="headerlink" href="#dark_sky_icon" title="Permanent link">&para;</a></h4>
 <p>This is the <code>entity_id</code> of your <a href="https://www.home-assistant.io/components/sensor.darksky/">Dark Sky</a> icon sensor.</p>
 <div class="codehilite"><pre><span></span>      <span class="s2">&quot;dark_sky_icon&quot;</span><span class="err">:</span> <span class="s2">&quot;sensor.dark_sky_icon&quot;</span><span class="err">,</span>
@@ -806,6 +810,7 @@
 
 <h3 id="right_indoor">right_indoor<a class="headerlink" href="#right_indoor" title="Permanent link">&para;</a></h3>
 <p>This is an array of grouped sensors which are labelled by a larger set of text.</p>
+<p><img alt="Right Indoor Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/weather-right.png" /></p>
 <div class="codehilite"><pre><span></span>      <span class="p">{</span>
         <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">,</span>
         <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -929,12 +934,13 @@
 <h4 id="entity_id">entity_id<a class="headerlink" href="#entity_id" title="Permanent link">&para;</a></h4>
 <p>The <code>entity_id</code> of the <a href="https://www.home-assistant.io/">HASS</a> entity. Switches and lights act as buttons
  which can be toggled on and off and scenes, scripts etc. act as
- non-toggleable buttons. Lights can also be clicked and held / long pressed to
- set brightness, temperature, effect, color etc. in a more info dialog.</p>
+ non-toggleable buttons.</p>
 <div class="codehilite"><pre><span></span>          <span class="s2">&quot;entity_id&quot;</span><span class="err">:</span> <span class="s2">&quot;light.tv_light&quot;</span>
 </pre></div>
 
-<p><img alt="More Info Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info.png" /></p>
+<p>Lights can also be clicked and held / long pressed to
+ set brightness, temperature, effect, color etc. in a more info dialog:</p>
+<p><img alt="More Info Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-dark.png" /></p>
 <h4 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h4>
 <p>The name is automatically pulled from <a href="https://www.home-assistant.io/">HASS</a>, but you can set a custom
  name if you like.</p>
@@ -955,7 +961,7 @@
 <h3 id="camera">camera<a class="headerlink" href="#camera" title="Permanent link">&para;</a></h3>
 <p>You can add any camera image supported by your browser. Set the <code>type</code> to
  <code>camera</code> to use this. Set the <code>name</code> as appropriate. The camera type spans
- two cards. Clicking on the camera shows the camera's video feed.</p>
+ two cards. Clicking on the camera shows the camera's feed.</p>
 <div class="codehilite"><pre><span></span>        <span class="p">{</span>
           <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;camera&quot;</span><span class="p">,</span>
           <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Office&quot;</span><span class="p">,</span>
@@ -964,6 +970,18 @@
         <span class="p">}</span>
 </pre></div>
 
+<p>Another use for the <code>camera</code> type is to show an image, instead of a camera, so your
+ screen acts as a photo frame.</p>
+<div class="codehilite"><pre><span></span>        <span class="p">{</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;camera&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Lake Scene&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;still_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://images.pexels.com/photos/709881/pexels-photo-709881.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://images.pexels.com/photos/709881/pexels-photo-709881.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;</span>
+        <span class="p">}</span>
+</pre></div>
+
+<p><img alt="Camera Picture Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/camera-picture.png" />
+<img alt="Camera Picture Full Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/camera-picture-full.png" /></p>
 <h4 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h4>
 <p>The url of the camera feed for use in full screen when the smaller camera card
  is clicked.</p>
