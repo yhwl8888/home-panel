@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Home Panel\n\u00b6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA touch-compatible web-app for controlling the home. Integrates with\n \nHome Assistant\n as an alternative / additional frontend.\n\n\nFeatures\n\u00b6\n\n\n\n\nSupports and can be used as alternate frontend for \nHome Assistant\n\n\nSupports MJPEG and related image-based camera/image feeds\n\n\nAdd weather and weather icons using Home Assistant's\n \nDark Sky\n component\n\n\nMade for touch screens with a sideways scrolling Material\n Design interface. (Compatible with deskops also)\n\n\n\n\nScreenshots\n\u00b6",
+            "text": "Home Panel\n\u00b6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA touch-compatible web-app for controlling the home. Integrates with\n \nHome Assistant\n as an alternative / additional frontend.\n\n\nFeatures\n\u00b6\n\n\n\n\nCard based user interface with support for \nHASS\n entities, links and\n cameras.\n\n\nSupports and can be used as alternate / additional frontend for\n \nHome Assistant\n\n\nSupports MJPEG and related image-based camera/image feeds\n (can also be used as a photo frame)\n\n\nLight control with brightness, temperature, color, effects etc. support\n\n\nSupports Radio playback from TuneIn API\n\n\nAdd weather and weather icons using Home Assistant's\n \nDark Sky\n\n component\n\n\nMade for touch screens with a sideways scrolling Material\n Design interface. (Compatible with desktops as well)\n\n\n\n\nScreenshots\n\u00b6",
             "title": "Overview"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#features",
-            "text": "Supports and can be used as alternate frontend for  Home Assistant  Supports MJPEG and related image-based camera/image feeds  Add weather and weather icons using Home Assistant's\n  Dark Sky  component  Made for touch screens with a sideways scrolling Material\n Design interface. (Compatible with deskops also)",
+            "text": "Card based user interface with support for  HASS  entities, links and\n cameras.  Supports and can be used as alternate / additional frontend for\n  Home Assistant  Supports MJPEG and related image-based camera/image feeds\n (can also be used as a photo frame)  Light control with brightness, temperature, color, effects etc. support  Supports Radio playback from TuneIn API  Add weather and weather icons using Home Assistant's\n  Dark Sky \n component  Made for touch screens with a sideways scrolling Material\n Design interface. (Compatible with desktops as well)",
             "title": "Features"
         },
         {
