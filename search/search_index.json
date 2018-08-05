@@ -201,6 +201,21 @@
             "title": "Starter Template"
         },
         {
+            "location": "/contributing/",
+            "text": "Contributing\n\u00b6\n\n\nYou are welcome to edit, fork and create pull requests as you like.\n\n\n\n\nIf you make a change, make sure to refer to any issues that it fixes.\n\n\nMake sure you have used linters and tested what you have added/changed\n  works.\n\n\nAny pull request will be verified by the bots, so make sure you fix any\n  issues the bots find.\n\n\nI, and any other users I approve will be able to merge your changes so\n  be patient.\n\n\n\n\nDocs\n\u00b6\n\n\nFeel free to improve documentation as you like by making a pull request in\n \n/docs\n. Once merged into the master branch, the GitLab CI server will update the\n docs in the \ngh-pages\n branch.",
+            "title": "Contributing"
+        },
+        {
+            "location": "/contributing/#contributing",
+            "text": "You are welcome to edit, fork and create pull requests as you like.   If you make a change, make sure to refer to any issues that it fixes.  Make sure you have used linters and tested what you have added/changed\n  works.  Any pull request will be verified by the bots, so make sure you fix any\n  issues the bots find.  I, and any other users I approve will be able to merge your changes so\n  be patient.",
+            "title": "Contributing"
+        },
+        {
+            "location": "/contributing/#docs",
+            "text": "Feel free to improve documentation as you like by making a pull request in\n  /docs . Once merged into the master branch, the GitLab CI server will update the\n docs in the  gh-pages  branch.",
+            "title": "Docs"
+        },
+        {
             "location": "/license/",
             "text": "MIT License\n\u00b6\n\n\nCopyright \u00a9 Timmo\n\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
             "title": "License"
