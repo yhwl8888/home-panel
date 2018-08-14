@@ -13,7 +13,7 @@
         <meta name="description" content="A touch-compatible web-app for controlling the home">
       
       
-        <link rel="canonical" href="https://git.timmo.xyz/home-panel/contributing/">
+        <link rel="canonical" href="https://git.timmo.xyz/home-panel/login/">
       
       
         <meta name="author" content="Timmo">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Contributing - Home Panel</title>
+        <title>Login - Home Panel</title>
       
     
     
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#contributing" tabindex="1" class="md-skip">
+      <a href="../#account-creation-and-login" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -130,7 +130,7 @@
                 Home Panel
               </span>
               <span class="md-header-nav__topic">
-                Contributing
+                Login
               </span>
             
           
@@ -269,11 +269,97 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../login/" title="Login" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Login
+      </label>
+    
+    <a href="./" title="Login" class="md-nav__link md-nav__link--active">
       Login
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-account" title="Create Account" class="md-nav__link">
+    Create Account
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#username" title="Username" class="md-nav__link">
+    Username
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password" title="Password" class="md-nav__link">
+    Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-assistant-host" title="Home Assistant Host" class="md-nav__link">
+    Home Assistant Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-assistant-password" title="Home Assistant Password" class="md-nav__link">
+    Home Assistant Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-assistant-ssl" title="Home Assistant SSL" class="md-nav__link">
+    Home Assistant SSL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" title="Login" class="md-nav__link">
+    Login
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -305,49 +391,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Contributing
-      </label>
-    
-    <a href="./" title="Contributing" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
       Contributing
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#docs" title="Docs" class="md-nav__link">
-    Docs
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -384,8 +432,56 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docs" title="Docs" class="md-nav__link">
-    Docs
+  <a href="#create-account" title="Create Account" class="md-nav__link">
+    Create Account
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#username" title="Username" class="md-nav__link">
+    Username
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password" title="Password" class="md-nav__link">
+    Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-assistant-host" title="Home Assistant Host" class="md-nav__link">
+    Home Assistant Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-assistant-password" title="Home Assistant Password" class="md-nav__link">
+    Home Assistant Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-assistant-ssl" title="Home Assistant SSL" class="md-nav__link">
+    Home Assistant SSL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" title="Login" class="md-nav__link">
+    Login
   </a>
   
 </li>
@@ -406,24 +502,47 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/timmo001/home-panel/edit/master/docs/contributing.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/timmo001/home-panel/edit/master/docs/login.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h1>
-<p>You are welcome to edit, fork and create pull requests as you like.</p>
+                <h1 id="account-creation-and-login">Account creation and login<a class="headerlink" href="#account-creation-and-login" title="Permanent link">&para;</a></h1>
+<p>This screen communicates with the API to log in the the user and get the
+ config. Once this is done, the login will be remembered automatically.
+ (If you clear your cookies/cache or recreate the app,
+ you will need to login or create a new account again)</p>
+<h2 id="create-account">Create Account<a class="headerlink" href="#create-account" title="Permanent link">&para;</a></h2>
+<p>On your first run of the app, you will be preseted with an account creation screen:</p>
+<p><img alt="Create Account" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/account-creation.png" /></p>
+<p>If you already have a user setup, click the <code>Already have an account?</code> button.</p>
+<p>Once you have entered all this information, click <code>Create Account</code> and you
+ will be automatically logged in.</p>
+<p>There are 5 steps to creating a new account for a user.</p>
+<h3 id="username">Username<a class="headerlink" href="#username" title="Permanent link">&para;</a></h3>
+<p>The username you will use to login.</p>
+<h3 id="password">Password<a class="headerlink" href="#password" title="Permanent link">&para;</a></h3>
+<p>The password you will use to login.</p>
+<h3 id="home-assistant-host">Home Assistant Host<a class="headerlink" href="#home-assistant-host" title="Permanent link">&para;</a></h3>
+<p>Enter your Home Assistant instance's hostname including the port if required.
+ (Ports <code>80</code> and <code>443</code> are not required) You do not need the <code>https://</code> or
+ <code>http://</code> part of the url. This will not work.</p>
+<p>Example hostnames:</p>
 <ul>
-<li>If you make a change, make sure to refer to any issues that it fixes.</li>
-<li>Make sure you have used linters and tested what you have added/changed
-  works.</li>
-<li>Any pull request will be verified by the bots, so make sure you fix any
-  issues the bots find.</li>
-<li>I, and any other users I approve will be able to merge your changes so
-  be patient.</li>
+<li><code>localhost:8123</code></li>
+<li><code>my.ddns.address</code></li>
+<li><code>192.168.1.100:8123</code></li>
+<li><code>mylocalserverhostname.local:8123</code></li>
 </ul>
-<h2 id="docs">Docs<a class="headerlink" href="#docs" title="Permanent link">&para;</a></h2>
-<p>Feel free to improve documentation as you like by making a pull request in
- <code>/docs</code>. Once merged into the master branch, the GitLab CI server will update the
- docs in the <code>gh-pages</code> branch.</p>
+<h3 id="home-assistant-password">Home Assistant Password<a class="headerlink" href="#home-assistant-password" title="Permanent link">&para;</a></h3>
+<p>The password you use to login to Home Assistant.</p>
+<h3 id="home-assistant-ssl">Home Assistant SSL<a class="headerlink" href="#home-assistant-ssl" title="Permanent link">&para;</a></h3>
+<p>Keep this box checked if your home assistant instance is secured.
+ Those using Home Assistant locally will likely need to switch this off.</p>
+<h2 id="login">Login<a class="headerlink" href="#login" title="Permanent link">&para;</a></h2>
+<p>Once you have created an account, you may get this screen:</p>
+<p><img alt="Login" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/account-login.png" /></p>
+<p>If you need to create a new account or your credentials have changed,
+ Click the <code>Create New Account</code> button.</p>
+<p>Enter your username and password you used previously and click <code>Log In</code>.</p>
                 
                   
                 
@@ -444,7 +563,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../template/" title="Template" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../setup/" title="Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -453,19 +572,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Template
+                Setup
               </span>
             </div>
           </a>
         
         
-          <a href="../license/" title="License" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../configuration/" title="Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                License
+                Configuration
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

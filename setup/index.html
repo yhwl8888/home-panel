@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-\.]+">
       
       <link rel="shortcut icon" href="../favicon.ico">
-      <meta name="generator" content="mkdocs-1.0, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.1, mkdocs-material-3.0.3">
     
     
       
@@ -410,6 +410,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../login/" title="Login" class="md-nav__link">
+      Login
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../configuration/" title="Configuration" class="md-nav__link">
       Configuration
     </a>
@@ -623,15 +635,11 @@ Change the environment variables to your own Home Assistant details</p>
   <span class="l l-Scalar l-Scalar-Plain">home-panel</span><span class="p p-Indicator">:</span>
     <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel</span>
     <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_HOST</span><span class="p p-Indicator">:</span> <span class="s">&#39;hassioserver.com&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_PASSWORD</span><span class="p p-Indicator">:</span> <span class="s">&#39;supersecurepassword&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_SSL</span><span class="p p-Indicator">:</span> <span class="s">&#39;true&#39;</span>
       <span class="l l-Scalar l-Scalar-Plain">REACT_APP_API_URL</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://localhost:3234</span>
     <span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:443</span>
     <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl:/ssl</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/config.json</span>
   <span class="l l-Scalar l-Scalar-Plain">home-panel-api</span><span class="p p-Indicator">:</span>
     <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel-api</span>
     <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
@@ -640,6 +648,7 @@ Change the environment variables to your own Home Assistant details</p>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3234:3234</span>
     <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl:/ssl</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/config.json</span>
 </pre></div>
 
 <h3 id="non-ssl">Non-SSL<a class="headerlink" href="#non-ssl" title="Permanent link">&para;</a></h3>
@@ -655,9 +664,6 @@ Change the environment variables to your own Home Assistant details</p>
   <span class="l l-Scalar l-Scalar-Plain">home-panel</span><span class="p p-Indicator">:</span>
     <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel</span>
     <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_HOST</span><span class="p p-Indicator">:</span> <span class="s">&#39;hassioserver.com&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_PASSWORD</span><span class="p p-Indicator">:</span> <span class="s">&#39;supersecurepassword&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">REACT_APP_HASS_SSL</span><span class="p p-Indicator">:</span> <span class="s">&#39;false&#39;</span>
       <span class="l l-Scalar l-Scalar-Plain">REACT_APP_API_URL</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://localhost:3123</span>
     <span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:80</span>
@@ -667,6 +673,8 @@ Change the environment variables to your own Home Assistant details</p>
     <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel-api</span>
     <span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3123:3123</span>
+    <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/config.json</span>
 </pre></div>
 
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
@@ -684,13 +692,9 @@ which are files generated by <a href="https://letsencrypt.org/">Let's Encrypt</a
 Change the environment variables to your own Home Assistant details</p>
 </div>
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
-  -e <span class="nv">REACT_APP_HASS_HOST</span><span class="o">=</span><span class="s1">&#39;hassioserver.com&#39;</span> <span class="se">\</span>
-  -e <span class="nv">REACT_APP_HASS_PASSWORD</span><span class="o">=</span><span class="s1">&#39;supersecurepassword&#39;</span> <span class="se">\</span>
-  -e <span class="nv">REACT_APP_HASS_SSL</span><span class="o">=</span><span class="s1">&#39;true&#39;</span> <span class="se">\</span>
   -e <span class="nv">REACT_APP_API_URL</span><span class="o">=</span><span class="s1">&#39;https://localhost:3234&#39;</span> <span class="se">\</span>
   -p <span class="m">8234</span>:443 <span class="se">\</span>
   -v ~/ssl:/ssl <span class="se">\</span>
-  -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
   timmo001/home-panel
 </pre></div>
 
@@ -698,6 +702,7 @@ Change the environment variables to your own Home Assistant details</p>
   -e <span class="nv">CERTIFICATES_DIR</span><span class="o">=</span><span class="s1">&#39;/ssl&#39;</span> <span class="se">\</span>
   -p <span class="m">3234</span>:3234 <span class="se">\</span>
   -v ~/ssl:/ssl <span class="se">\</span>
+  -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
   timmo001/home-panel-api
 </pre></div>
 
@@ -708,17 +713,14 @@ Change the environment variables to your own Home Assistant details</p>
  world.</p>
 </div>
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
-  -e <span class="nv">REACT_APP_HASS_HOST</span><span class="o">=</span><span class="s1">&#39;hassioserver.com&#39;</span> <span class="se">\</span>
-  -e <span class="nv">REACT_APP_HASS_PASSWORD</span><span class="o">=</span><span class="s1">&#39;supersecurepassword&#39;</span> <span class="se">\</span>
-  -e <span class="nv">REACT_APP_HASS_SSL</span><span class="o">=</span><span class="s1">&#39;false&#39;</span> <span class="se">\</span>
   -e <span class="nv">REACT_APP_API_URL</span><span class="o">=</span><span class="s1">&#39;https://localhost:3123&#39;</span> <span class="se">\</span>
   -p <span class="m">8234</span>:80 <span class="se">\</span>
-  -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
   timmo001/home-panel
 </pre></div>
 
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
   -p <span class="m">3123</span>:3123 <span class="se">\</span>
+  -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
   timmo001/home-panel-api
 </pre></div>
 
@@ -729,6 +731,9 @@ Change the environment variables to your own Home Assistant details</p>
 <li>First clone the
   <a href="https://github.com/timmo001/home-panel-api">Home Assistant API</a> repository</li>
 <li>Checkout the version you want via releases</li>
+<li>Copy <code>.env</code> to <code>.env.local</code> and update it to use your own Home Assistant details</li>
+<li>Copy <code>files/config.template.json</code> to <code>files/config.json</code></li>
+<li>Update <code>files/config.json</code> to your configuration</li>
 <li>Install packages</li>
 </ul>
 <div class="codehilite"><pre><span></span>yarn install
@@ -744,32 +749,18 @@ Change the environment variables to your own Home Assistant details</p>
 <ul>
 <li>Clone this repository</li>
 <li>Checkout the version you want via releases</li>
-<li>Copy <code>.env</code> to <code>.env.local</code> and update it to use your own Home Assistant details</li>
-<li>Rename <code>config.template.json</code> to <code>config.json</code></li>
-</ul>
-<div class="codehilite"><pre><span></span>cp config.template.json src/config.json
-</pre></div>
-
-<ul>
-<li>Update <code>src/config.json</code> to your configuration</li>
 <li>Install packages</li>
 </ul>
 <div class="codehilite"><pre><span></span>yarn install
 </pre></div>
 
-<ul>
-<li>Copy <code>config.json</code> into <code>node_modules/config.json</code></li>
-</ul>
-<div class="codehilite"><pre><span></span>cp config.json node_modules/
-</pre></div>
-
+<h4 id="production-ssl">Production - SSL<a class="headerlink" href="#production-ssl" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Build a production version</li>
 </ul>
 <div class="codehilite"><pre><span></span>yarn build
 </pre></div>
 
-<h4 id="production-ssl">Production - SSL<a class="headerlink" href="#production-ssl" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Install nginx</li>
 <li>Edit your server config <code>/etc/nginx/conf.d/default.conf</code></li>
@@ -803,6 +794,12 @@ Change the environment variables to your own Home Assistant details</p>
 <div class="admonition warning">
 <p><strong>This option is not secure. Do not open to the outside world!</strong></p>
 </div>
+<ul>
+<li>Build a production version</li>
+</ul>
+<div class="codehilite"><pre><span></span>yarn build
+</pre></div>
+
 <ul>
 <li>Install nginx</li>
 <li>Edit your server config <code>/etc/nginx/conf.d/default.conf</code></li>
@@ -875,13 +872,13 @@ Change the environment variables to your own Home Assistant details</p>
           </a>
         
         
-          <a href="../configuration/" title="Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../login/" title="Login" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Configuration
+                Login
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -928,7 +925,7 @@ Change the environment variables to your own Home Assistant details</p>
     
       <script src="../assets/javascripts/application.583bbe55.js"></script>
       
-      <script>app.initialize({version:"1.0",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.0.1",url:{base:".."}})</script>
       
     
     
