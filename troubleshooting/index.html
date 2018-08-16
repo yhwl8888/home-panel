@@ -354,6 +354,29 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#use-the-latest-version" title="Use the latest version" class="md-nav__link">
+    Use the latest version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-posting-your-issue" title="Before posting your issue" class="md-nav__link">
+    Before posting your issue
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -368,6 +391,7 @@
                 
                 
                 <h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
+<h2 id="use-the-latest-version">Use the latest version<a class="headerlink" href="#use-the-latest-version" title="Permanent link">&para;</a></h2>
 <p>If your are facing any issues logging in, connecting etc. you should first
  make sure you are running the latest version.</p>
 <p>If you are running Docker, run:</p>
@@ -377,9 +401,21 @@ docker pull timmo001/home-panel-api
 
 <p>and run the containers again.</p>
 <p>If running natively, checkout the latest version from the release page for
- the <a href="https://github.com/timmo001/home-panel/releases">app</a> and the <a href="https://github.com/timmo001/home-panel-api/releases">API</a>.</p>
+ the <a href="https://github.com/timmo001/home-panel/releases">app</a> and the <a href="https://github.com/timmo001/home-panel-api/releases">API</a> and rerun the app.</p>
 <p>If you are still having issues, you can post on the Home Assistant
  <a href="https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597">forum thread</a> where the community will be able to help you if not myself.</p>
+<h2 id="before-posting-your-issue">Before posting your issue<a class="headerlink" href="#before-posting-your-issue" title="Permanent link">&para;</a></h2>
+<p>Before posting your issue, make sure you check the logs for any errors.
+ You may be able to find out the issue for yourself.</p>
+<p>If your issue is inside the webapp, first check the developer console.
+ To do this press <code>F12</code> on the keyboard if you are running Chrome.</p>
+<p>Also check the main app logs. With Docker Compose, just <code>cd</code> into the
+ <code>docker-compose.yml</code> directory and run:</p>
+<div class="codehilite"><pre><span></span>docker-compose logs -f
+</pre></div>
+
+<p>If you are still stuck, post these logs to the <a href="https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597">forum thread</a> (make sure to
+  remove any personal data such as a public address etc.)</p>
                 
                   
                 
