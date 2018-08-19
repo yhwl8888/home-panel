@@ -680,7 +680,7 @@ Change the environment variables to your own Home Assistant details</p>
   <span class="l l-Scalar l-Scalar-Plain">home-panel-api</span><span class="p p-Indicator">:</span>
     <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel-api</span>
     <span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3123:3123</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3234:3234</span>
     <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/config.json</span>
 </pre></div>
@@ -725,7 +725,7 @@ Change the environment variables to your own Home Assistant details</p>
 </pre></div>
 
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
-  -p <span class="m">3123</span>:3123 <span class="se">\</span>
+  -p <span class="m">3234</span>:3234 <span class="se">\</span>
   -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
   timmo001/home-panel-api
 </pre></div>
