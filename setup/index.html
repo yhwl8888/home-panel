@@ -688,7 +688,7 @@ Change the environment variables to your own Home Assistant details</p>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3234:3234</span>
     <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl:/ssl</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/config.json</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/files/config.json</span>
 </pre></div>
 
 <h3 id="non-ssl">Non-SSL<a class="headerlink" href="#non-ssl" title="Permanent link">&para;</a></h3>
@@ -712,7 +712,7 @@ Change the environment variables to your own Home Assistant details</p>
     <span class="l l-Scalar l-Scalar-Plain">ports</span><span class="p p-Indicator">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3234:3234</span>
     <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/config.json</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/config.json:/usr/src/app/files/config.json</span>
 </pre></div>
 
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
@@ -739,7 +739,7 @@ Change the environment variables to your own Home Assistant details</p>
   -e <span class="nv">CERTIFICATES_DIR</span><span class="o">=</span><span class="s1">&#39;/ssl&#39;</span> <span class="se">\</span>
   -p <span class="m">3234</span>:3234 <span class="se">\</span>
   -v ~/ssl:/ssl <span class="se">\</span>
-  -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
+  -v PATH_TO_CONFIG/config.json:/usr/src/app/files/config.json <span class="se">\</span>
   timmo001/home-panel-api
 </pre></div>
 
@@ -756,7 +756,7 @@ Change the environment variables to your own Home Assistant details</p>
 
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
   -p <span class="m">3234</span>:3234 <span class="se">\</span>
-  -v PATH_TO_CONFIG/config.json:/usr/src/app/config.json <span class="se">\</span>
+  -v PATH_TO_CONFIG/config.json:/usr/src/app/files/config.json <span class="se">\</span>
   timmo001/home-panel-api
 </pre></div>
 
