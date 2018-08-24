@@ -374,6 +374,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#colors" title="Colors" class="md-nav__link">
+    Colors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-color" title="Material Color" class="md-nav__link">
+    Material Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hexadecimal-color" title="Hexadecimal color" class="md-nav__link">
+    Hexadecimal color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image" title="Image" class="md-nav__link">
+    Image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example-themes" title="Example Themes" class="md-nav__link">
     Example Themes
   </a>
@@ -492,6 +526,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#colors" title="Colors" class="md-nav__link">
+    Colors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-color" title="Material Color" class="md-nav__link">
+    Material Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hexadecimal-color" title="Hexadecimal color" class="md-nav__link">
+    Hexadecimal color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image" title="Image" class="md-nav__link">
+    Image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#example-themes" title="Example Themes" class="md-nav__link">
     Example Themes
   </a>
@@ -600,8 +668,30 @@
 </tr>
 </tbody>
 </table>
+<h2 id="colors">Colors<a class="headerlink" href="#colors" title="Permanent link">&para;</a></h2>
+<p>To set the color you can use any color using the hex value, Material colors or
+ even images for backgrounds.</p>
+<h3 id="material-color">Material Color<a class="headerlink" href="#material-color" title="Permanent link">&para;</a></h3>
+<p>To use Material colors, you can use the <a href="https://material.io/design/color/#tools-for-picking-colors">Material Design Pallette</a>
+ to find the color you want, then using them like so:</p>
+<div class="codehilite"><pre><span></span>            <span class="s2">&quot;main&quot;</span><span class="err">:</span> <span class="s2">&quot;blueGrey[500]&quot;</span><span class="err">,</span>
+</pre></div>
+
+<p>See how <code>Blue Grey</code> becomes camel-cased as <code>blueGrey</code>. The <code>[500]</code> is the
+ exact color. This would result in <code>#607D8B</code>.</p>
+<h3 id="hexadecimal-color">Hexadecimal color<a class="headerlink" href="#hexadecimal-color" title="Permanent link">&para;</a></h3>
+<p>You can use hexadecimal values to set colors using the usual <code>#RRGGBB</code> format.</p>
+<h3 id="image">Image<a class="headerlink" href="#image" title="Permanent link">&para;</a></h3>
+<p>For backgrounds, you can set an image for the background if you like.
+ The only caveat to this is that you have to use css formatting.</p>
+<p>To add an image set it as a <code>url</code> like so:</p>
+<div class="codehilite"><pre><span></span>            <span class="s2">&quot;main&quot;</span><span class="err">:</span> <span class="s2">&quot;url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg)&quot;</span><span class="err">,</span>
+</pre></div>
+
+<p>Make sure to put the url in brackets like the above.</p>
 <h2 id="example-themes">Example Themes<a class="headerlink" href="#example-themes" title="Permanent link">&para;</a></h2>
-<p>Here are some example themes you can use or expand on. Contributions welcome!</p>
+<p>Here are some example themes you can use or expand on.
+ Contributions are welcome!</p>
 <h3 id="midnight">Midnight<a class="headerlink" href="#midnight" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>      <span class="p">{</span>
         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Midnight&quot;</span><span class="p">,</span>
