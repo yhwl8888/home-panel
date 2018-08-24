@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-\.]+">
       
       <link rel="shortcut icon" href="../favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.1, mkdocs-material-3.0.3">
+      <meta name="generator" content="mkdocs-1.0.2, mkdocs-material-3.0.3">
     
     
       
@@ -258,16 +258,35 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../setup/" title="Setup" class="md-nav__link">
       Setup
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
@@ -276,10 +295,36 @@
     </a>
   </li>
 
+        
+      </ul>
+    </nav>
+  </li>
+
     
       
       
       
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Customization
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Customization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
@@ -288,10 +333,22 @@
     </a>
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
 
   
 
@@ -307,6 +364,11 @@
       Template
     </a>
     
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -378,7 +440,29 @@
                 
                 <h1 id="starter-template">Starter Template<a class="headerlink" href="#starter-template" title="Permanent link">&para;</a></h1>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="p">{},</span>
+  <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;custom&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Midnight&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;overrides&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;backgrounds&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;#383c45&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="s2">&quot;#383c45&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;card&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;on&quot;</span><span class="p">:</span> <span class="s2">&quot;pink[600]&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;off&quot;</span><span class="p">:</span> <span class="s2">&quot;#434954&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;disabled&quot;</span><span class="p">:</span> <span class="s2">&quot;#7f848e&quot;</span>
+            <span class="p">}</span>
+          <span class="p">},</span>
+          <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;light&quot;</span><span class="p">:</span> <span class="s2">&quot;grey[50]&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;grey[100]&quot;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
   <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;left_outdoor_weather&quot;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&quot;dark_sky_icon&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dark_sky_icon&quot;</span><span class="p">,</span>
@@ -450,7 +534,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../configuration/" title="Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../themes/" title="Themes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -459,7 +543,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Configuration
+                Themes
               </span>
             </div>
           </a>
@@ -518,7 +602,7 @@
     
       <script src="../assets/javascripts/application.583bbe55.js"></script>
       
-      <script>app.initialize({version:"1.0.1",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.0.2",url:{base:".."}})</script>
       
     
     
