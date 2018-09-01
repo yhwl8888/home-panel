@@ -659,6 +659,18 @@
 <td>The color of the card when the entity is unavailable.</td>
 </tr>
 <tr>
+<td>backgrounds.card.alarm.home</td>
+<td>The color of an alarm card and it is armed home.</td>
+</tr>
+<tr>
+<td>backgrounds.card.alarm.away</td>
+<td>The color of an alarm card and it is armed away.</td>
+</tr>
+<tr>
+<td>backgrounds.card.alarm.triggered</td>
+<td>The color of an alarm card and the alarm has been triggered.</td>
+</tr>
+<tr>
 <td>theme.overrides.text.light</td>
 <td>The color of the lighter text and icons</td>
 </tr>
@@ -689,7 +701,7 @@
 <p>For backgrounds, you can set an image for the background if you like.
  The only caveat to this is that you have to use css formatting.</p>
 <p>To add an image set it as a <code>url</code> like so:</p>
-<div class="codehilite"><pre><span></span>            <span class="s2">&quot;main&quot;</span><span class="err">:</span> <span class="s2">&quot;url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg)&quot;</span><span class="err">,</span>
+<div class="codehilite"><pre><span></span><span class="s2">&quot;main&quot;</span><span class="err">:</span> <span class="s2">&quot;url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg)&quot;</span><span class="err">,</span>
 </pre></div>
 
 <p>Make sure to put the url in brackets like the above.</p>
@@ -708,7 +720,11 @@
             <span class="nt">&quot;card&quot;</span><span class="p">:</span> <span class="p">{</span>
               <span class="nt">&quot;on&quot;</span><span class="p">:</span> <span class="s2">&quot;pink[600]&quot;</span><span class="p">,</span>
               <span class="nt">&quot;off&quot;</span><span class="p">:</span> <span class="s2">&quot;#434954&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;disabled&quot;</span><span class="p">:</span> <span class="s2">&quot;#7f848e&quot;</span>
+              <span class="nt">&quot;disabled&quot;</span><span class="p">:</span> <span class="s2">&quot;#7f848e&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;alarm&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;home&quot;</span><span class="p">:</span> <span class="s2">&quot;pink[600]&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;away&quot;</span><span class="p">:</span> <span class="s2">&quot;pink[600]&quot;</span>
+              <span class="p">}</span>
             <span class="p">}</span>
           <span class="p">},</span>
           <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -725,12 +741,15 @@
         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Forest&quot;</span><span class="p">,</span>
         <span class="nt">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;light&quot;</span><span class="p">,</span>
         <span class="nt">&quot;overrides&quot;</span><span class="p">:</span> <span class="p">{</span>
-          <span class="nt">&quot;primary&quot;</span><span class="p">:</span> <span class="s2">&quot;lightGreen&quot;</span><span class="p">,</span>
           <span class="nt">&quot;backgrounds&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg)&quot;</span><span class="p">,</span>
             <span class="nt">&quot;card&quot;</span><span class="p">:</span> <span class="p">{</span>
               <span class="nt">&quot;on&quot;</span><span class="p">:</span> <span class="s2">&quot;lightGreen[700]&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;off&quot;</span><span class="p">:</span> <span class="s2">&quot;green[50]&quot;</span>
+              <span class="nt">&quot;off&quot;</span><span class="p">:</span> <span class="s2">&quot;green[50]&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;alarm&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;home&quot;</span><span class="p">:</span> <span class="s2">&quot;lightGreen[700]&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;away&quot;</span><span class="p">:</span> <span class="s2">&quot;lightGreen[700]&quot;</span>
+              <span class="p">}</span>
             <span class="p">}</span>
           <span class="p">}</span>
         <span class="p">}</span>
