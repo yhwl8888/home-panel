@@ -367,8 +367,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configurable-items" title="Configurable items" class="md-nav__link">
-    Configurable items
+  <a href="#name" title="name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base" title="base" class="md-nav__link">
+    base
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overrides" title="overrides" class="md-nav__link">
+    overrides
   </a>
   
 </li>
@@ -519,8 +533,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configurable-items" title="Configurable items" class="md-nav__link">
-    Configurable items
+  <a href="#name" title="name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base" title="base" class="md-nav__link">
+    base
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overrides" title="overrides" class="md-nav__link">
+    overrides
   </a>
   
 </li>
@@ -611,13 +639,24 @@
  config or use the <a href="https://git.timmo.xyz/home-panel/template/">template</a>.</p>
 <div class="codehilite"><pre><span></span>  <span class="s2">&quot;theme&quot;</span><span class="err">:</span> <span class="p">{</span>
     <span class="nt">&quot;custom&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;name&quot;</span><span class="err">:</span> <span class="s2">&quot;My Theme&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;base&quot;</span><span class="err">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;overrides&quot;</span><span class="err">:</span> <span class="p">{</span>
+
+        <span class="p">}</span>
     <span class="p">]</span>
   <span class="p">}</span>
 </pre></div>
 
-<h2 id="configurable-items">Configurable items<a class="headerlink" href="#configurable-items" title="Permanent link">&para;</a></h2>
-<p>Here is a table of all parts of the theme that can be overridden/configured.
- Replace the dots (.) with an object. (<code>&quot;backgrounds&quot;: { ... }</code>)</p>
+<h2 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h2>
+<p>The name of your theme</p>
+<h2 id="base">base<a class="headerlink" href="#base" title="Permanent link">&para;</a></h2>
+<p>The theme to use as this theme's base. Start with either <code>light</code> or <code>dark</code> and
+ expand from there</p>
+<h2 id="overrides">overrides<a class="headerlink" href="#overrides" title="Permanent link">&para;</a></h2>
+<p>This is where you edit the theme. Here is a table of all parts of the theme
+ that can be overridden/configured. Replace the dots (.) with an object.
+ (<code>&quot;backgrounds&quot;: { ... }</code>)</p>
 <table>
 <thead>
 <tr>
@@ -628,7 +667,7 @@
 <tbody>
 <tr>
 <td>type</td>
-<td>The top level base. This is the high level theme which can only be light or dark. Generally this isn't needed when using the light or dark theme as the <code>base</code></td>
+<td>The top level base. This is the high level theme which can only be <code>light</code> or <code>dark</code>. Generally this isn't required when using the light or dark theme as the <code>base</code></td>
 </tr>
 <tr>
 <td>primary</td>
