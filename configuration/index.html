@@ -369,12 +369,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#ui" title="ui" class="md-nav__link">
     ui
   </a>
@@ -387,7 +382,8 @@
     cards
   </a>
   
-</li>
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#round" title="round" class="md-nav__link">
@@ -407,11 +403,21 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#custom" title="custom" class="md-nav__link">
     custom
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -741,12 +747,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#ui" title="ui" class="md-nav__link">
     ui
   </a>
@@ -759,7 +760,8 @@
     cards
   </a>
   
-</li>
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#round" title="round" class="md-nav__link">
@@ -779,11 +781,21 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#custom" title="custom" class="md-nav__link">
     custom
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1044,36 +1056,42 @@
   <span class="p">}</span><span class="err">,</span>
 </pre></div>
 
-<h2 id="ui">ui<a class="headerlink" href="#ui" title="Permanent link">&para;</a></h2>
+<h3 id="ui">ui<a class="headerlink" href="#ui" title="Permanent link">&para;</a></h3>
 <p>This section is for general theme and layout customizations.</p>
-<h3 id="cards">cards<a class="headerlink" href="#cards" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>    <span class="s2">&quot;ui&quot;</span><span class="err">:</span> <span class="p">{</span>
+<h4 id="cards">cards<a class="headerlink" href="#cards" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>  <span class="s2">&quot;theme&quot;</span><span class="err">:</span> <span class="p">{</span>
+    <span class="nt">&quot;ui&quot;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&quot;cards&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;round&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;elevation&quot;</span><span class="p">:</span> <span class="mi">2</span>
       <span class="p">}</span>
-    <span class="p">}</span><span class="err">,</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 </pre></div>
 
-<h3 id="round">round<a class="headerlink" href="#round" title="Permanent link">&para;</a></h3>
+<h5 id="round">round<a class="headerlink" href="#round" title="Permanent link">&para;</a></h5>
 <p>Should the card be round? Default is <code>false</code>.</p>
-<div class="codehilite"><pre><span></span>    <span class="s2">&quot;ui&quot;</span><span class="err">:</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span>  <span class="s2">&quot;theme&quot;</span><span class="err">:</span> <span class="p">{</span>
+    <span class="nt">&quot;ui&quot;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&quot;cards&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;round&quot;</span><span class="p">:</span> <span class="kc">true</span>
       <span class="p">}</span>
-    <span class="p">}</span><span class="err">,</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 </pre></div>
 
-<h3 id="elevation">elevation<a class="headerlink" href="#elevation" title="Permanent link">&para;</a></h3>
+<h5 id="elevation">elevation<a class="headerlink" href="#elevation" title="Permanent link">&para;</a></h5>
 <p>The elevation of the card. Default is <code>1</code>.</p>
-<div class="codehilite"><pre><span></span>    <span class="s2">&quot;ui&quot;</span><span class="err">:</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span>  <span class="s2">&quot;theme&quot;</span><span class="err">:</span> <span class="p">{</span>
+    <span class="nt">&quot;ui&quot;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&quot;cards&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;elevation&quot;</span><span class="p">:</span> <span class="mi">2</span>
       <span class="p">}</span>
-    <span class="p">}</span><span class="err">,</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 </pre></div>
 
-<h2 id="custom">custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h2>
+<h3 id="custom">custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h3>
 <p>You can create custom themes in an array here. See the the docs <a href="https://git.timmo.xyz/home-panel/themes/">here</a>.</p>
 <h2 id="header">header<a class="headerlink" href="#header" title="Permanent link">&para;</a></h2>
 <p>This section can display weather and other sensor information in the top
