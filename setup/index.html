@@ -726,6 +726,9 @@ Change the environment variables to your own Home Assistant details</p>
 <span class="nt">services</span><span class="p">:</span>
   <span class="nt">home-panel</span><span class="p">:</span>
     <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel</span>
+    <span class="nt">environment</span><span class="p">:</span>
+      <span class="nt">SSL_CERTFILE</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fullchain.pem</span>
+      <span class="nt">SSL_KEYFILE</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">privkey.pem</span>
     <span class="nt">ports</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3234:3234</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:8234</span>
@@ -776,6 +779,8 @@ Change the environment variables to your own Home Assistant details</p>
   -v PATH_TO_CONFIG/home-panel-config.json:/data/config.json
   -v ~/ssl/fullchain.pem:/data/ssl/fullchain.pem
   -v ~/ssl/privkey.pem:/data/ssl/privkey.pem
+  -e <span class="nv">SSL_CERTFILE</span><span class="o">=</span>fullchain.pem <span class="se">\</span>
+  -e <span class="nv">SSL_KEYFILE</span><span class="o">=</span>privkey.pem <span class="se">\</span>
   timmo001/home-panel
 </pre></div>
 
