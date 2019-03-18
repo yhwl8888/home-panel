@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://git.timmo.xyz/home-panel/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://git.timmo.xyz/home-panel/setup/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/setup/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://git.timmo.xyz/home-panel/login/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/login/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://git.timmo.xyz/home-panel/configuration/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/configuration/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://git.timmo.xyz/home-panel/themes/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/themes/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://git.timmo.xyz/home-panel/template/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/template/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://git.timmo.xyz/home-panel/troubleshooting/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/troubleshooting/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://git.timmo.xyz/home-panel/contributing/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/contributing/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://git.timmo.xyz/home-panel/license/</loc>
-     <lastmod>2019-03-02</lastmod>
+     <loc>https://timmo.dev/home-panel/license/</loc>
+     <lastmod>2019-03-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
