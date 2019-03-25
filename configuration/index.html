@@ -322,6 +322,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../configui/" title="Configuration UI" class="md-nav__link">
+      Configuration UI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -1464,22 +1476,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/timmo001/home-panel/edit/master/docs/configuration.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/timmo001/home-panel/edit/master/docs/docs/configuration.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h1>
 <p>To get started, copy the <a href="https://timmo.dev/home-panel/template/">starter template</a>
- to the <code>files/config.json</code> file in the API.</p>
+to the <code>files/config.json</code> file in the API.</p>
 <p>Whenever you make a change, just reload the page and the latest <code>config.json</code>
- file will be used.</p>
+file will be used.</p>
 <p>Now, we will go over the sections you can configure inside the JSON file along
- with examples you can adapt:</p>
+with examples you can adapt:</p>
 <h2 id="theme">theme<a class="headerlink" href="#theme" title="Permanent link">&para;</a></h2>
 <h3 id="auto">auto<a class="headerlink" href="#auto" title="Permanent link">&para;</a></h3>
 <p>You can override the way the <code>auto</code> theme triggers between light and dark
- mode. The format is similar to the way <a href="https://www.home-assistant.io/">Home Assistant's</a>
- automations work.
- You set the sensor's <code>entity_id</code> and the <strong>below</strong> threshold.</p>
+mode. The format is similar to the way <a href="https://www.home-assistant.io/">Home Assistant's</a>
+automations work.
+You set the sensor's <code>entity_id</code> and the <strong>below</strong> threshold.</p>
 <p>The sensor below is an LDR sensor which sets the <em>dark</em> theme when below
 <em>600 LUX</em>:</p>
 <div class="codehilite"><pre><span></span>  <span class="s2">&quot;theme&quot;</span><span class="err">:</span> <span class="p">{</span>
@@ -1539,7 +1551,7 @@
 <p>You can create custom themes in an array here. See the the docs <a href="https://timmo.dev/home-panel/themes/">here</a>.</p>
 <h2 id="header">header<a class="headerlink" href="#header" title="Permanent link">&para;</a></h2>
 <p>This section can display weather and other sensor information in the top
- section of the app alongside the time and date.</p>
+section of the app alongside the time and date.</p>
 <p><img alt="Header Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/header.png" /></p>
 <div class="codehilite"><pre><span></span>  <span class="s2">&quot;header&quot;</span><span class="err">:</span> <span class="p">{</span>
     <span class="nt">&quot;left_outdoor_weather&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -1618,7 +1630,7 @@
 
 <h4 id="format">format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h4>
 <p>Set a custom date format. Refer to the
- <a href="https://momentjs.com/docs/#/displaying/format/">momentjs docs</a> for more info. Default is <code>Do MMMM YYYY</code>.</p>
+<a href="https://momentjs.com/docs/#/displaying/format/">momentjs docs</a> for more info. Default is <code>Do MMMM YYYY</code>.</p>
 <div class="codehilite"><pre><span></span>  <span class="s2">&quot;header&quot;</span><span class="err">:</span> <span class="p">{</span>
     <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;dddd, MMMM Do YYYY&quot;</span>
@@ -1628,7 +1640,7 @@
 
 <h3 id="left_outdoor_weather">left_outdoor_weather<a class="headerlink" href="#left_outdoor_weather" title="Permanent link">&para;</a></h3>
 <p>This section is used for setting the <code>entity_id</code>'s of weather sensors.
- These are meant for outdoor sensors, but can be anything that has a <code>state</code>.</p>
+These are meant for outdoor sensors, but can be anything that has a <code>state</code>.</p>
 <p><img alt="Left Outdoor Weather Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/weather-left.png" /></p>
 <h4 id="dark_sky_icon">dark_sky_icon<a class="headerlink" href="#dark_sky_icon" title="Permanent link">&para;</a></h4>
 <p>This is the <code>entity_id</code> of your <a href="https://www.home-assistant.io/components/sensor.darksky/">Dark Sky</a> icon sensor.</p>
@@ -1642,8 +1654,8 @@
 
 <h4 id="data">data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h4>
 <p>This is an array of the <code>entity_id</code>'s that describes the current weather
- conditions. <code>unit_of_measurement</code> is added onto the end of the
- sensor's <code>state</code>.</p>
+conditions. <code>unit_of_measurement</code> is added onto the end of the
+sensor's <code>state</code>.</p>
 <div class="codehilite"><pre><span></span>      <span class="s2">&quot;data&quot;</span><span class="err">:</span> <span class="p">[</span>
         <span class="p">{</span>
           <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.pws_temp_c&quot;</span><span class="p">,</span>
@@ -1659,32 +1671,32 @@
 <h3 id="right_indoor">right_indoor<a class="headerlink" href="#right_indoor" title="Permanent link">&para;</a></h3>
 <p>This is an array of grouped sensors which are labelled by a larger set of text.</p>
 <p><img alt="Right Indoor Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/weather-right.png" /></p>
-<div class="codehilite"><pre><span></span>      <span class="p">{</span>
-        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
-          <span class="p">{</span>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
             <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dht22_01_temperature&quot;</span><span class="p">,</span>
             <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;°C&quot;</span>
-          <span class="p">},</span>
-          <span class="p">{</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
             <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dht22_01_humidity&quot;</span><span class="p">,</span>
             <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;%&quot;</span>
-          <span class="p">}</span>
-        <span class="p">]</span>
-      <span class="p">}</span><span class="err">,</span>
-      <span class="p">{</span>
-        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Upstairs&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
-          <span class="p">{</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span><span class="err">,</span>
+<span class="p">{</span>
+    <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Upstairs&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
             <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.sn2_temperature&quot;</span><span class="p">,</span>
             <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;°C&quot;</span>
-          <span class="p">},</span>
-          <span class="p">{</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
             <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.sn2_humidity&quot;</span><span class="p">,</span>
             <span class="nt">&quot;unit_of_measurement&quot;</span><span class="p">:</span> <span class="s2">&quot;%&quot;</span>
-          <span class="p">}</span>
-        <span class="p">]</span>
-      <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
 </pre></div>
 
 <h4 id="label">label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h4>
@@ -1694,8 +1706,8 @@
 
 <h4 id="data_1">data<a class="headerlink" href="#data_1" title="Permanent link">&para;</a></h4>
 <p>This is an array of the <code>entity_id</code>'s that describes the current weather
- conditions. <code>unit_of_measurement</code> is added onto the end of the
- sensor's <code>state</code>.</p>
+conditions. <code>unit_of_measurement</code> is added onto the end of the
+sensor's <code>state</code>.</p>
 <div class="codehilite"><pre><span></span>        <span class="s2">&quot;data&quot;</span><span class="err">:</span> <span class="p">[</span>
           <span class="p">{</span>
             <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;sensor.dht22_01_temperature&quot;</span><span class="p">,</span>
@@ -1710,8 +1722,8 @@
 
 <h2 id="pages">pages<a class="headerlink" href="#pages" title="Permanent link">&para;</a></h2>
 <p>These can be optionally added to add pages which can be navigated between
- using the bottom navigation bar. If no pages are defined, there will be
- no bottom navigation bar shown.</p>
+using the bottom navigation bar. If no pages are defined, there will be
+no bottom navigation bar shown.</p>
 <div class="codehilite"><pre><span></span>  <span class="s2">&quot;pages&quot;</span><span class="err">:</span> <span class="p">[</span>
     <span class="p">{</span>
       <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Home&quot;</span><span class="p">,</span>
@@ -1732,11 +1744,11 @@
 <p>The name of the page show in the bottom navigation bar.</p>
 <h3 id="icon">icon<a class="headerlink" href="#icon" title="Permanent link">&para;</a></h3>
 <p>The icon shown in the bottom navigation bar. Use <a href="https://materialdesignicons.com">Material Design Icons</a>
- to find the icon you want to use.</p>
+to find the icon you want to use.</p>
 <h2 id="items">items<a class="headerlink" href="#items" title="Permanent link">&para;</a></h2>
 <p>The main view. Where all the cards, cameras, links etc. go. First give the
- group of cards a name, then add what you want. See below for the available
- types of cards.</p>
+group of cards a name, then add what you want. See below for the available
+types of cards.</p>
 <div class="codehilite"><pre><span></span>  <span class="s2">&quot;items&quot;</span><span class="err">:</span> <span class="p">[</span>
     <span class="p">{</span>
       <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Scenes&quot;</span><span class="p">,</span>
@@ -1806,7 +1818,7 @@
 
 <h3 id="page">page<a class="headerlink" href="#page" title="Permanent link">&para;</a></h3>
 <p>The page number the group is on. This defaults to <code>1</code> and will not show if
- the page does not exist.</p>
+the page does not exist.</p>
 <div class="codehilite"><pre><span></span>  <span class="s2">&quot;items&quot;</span><span class="err">:</span> <span class="p">[</span>
     <span class="p">{</span>
       <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Cameras&quot;</span><span class="p">,</span>
@@ -1820,35 +1832,35 @@
 
 <h3 id="hass">hass<a class="headerlink" href="#hass" title="Permanent link">&para;</a></h3>
 <p>A Home Assistant card. This is the default type of card. You do not need to
- set the <code>type</code> here as the app defaults to this.</p>
-<div class="codehilite"><pre><span></span>        <span class="p">{</span>
-          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;light.tv_light&quot;</span>
-        <span class="p">}</span><span class="err">,</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Night/Film Mode&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.night_mode&quot;</span>
-        <span class="p">}</span>
+set the <code>type</code> here as the app defaults to this.</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;light.tv_light&quot;</span>
+<span class="p">}</span><span class="err">,</span>
+<span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Night/Film Mode&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;entity_id&quot;</span><span class="p">:</span> <span class="s2">&quot;scene.night_mode&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
 <h4 id="entity_id">entity_id<a class="headerlink" href="#entity_id" title="Permanent link">&para;</a></h4>
 <p>The <code>entity_id</code> of the <a href="https://www.home-assistant.io/">Home Assistant</a> entity. Switches and lights act
- as buttons which can be toggled on and off and scenes, scripts etc. act as
- non-toggleable buttons.</p>
+as buttons which can be toggled on and off and scenes, scripts etc. act as
+non-toggleable buttons.</p>
 <div class="codehilite"><pre><span></span>          <span class="s2">&quot;entity_id&quot;</span><span class="err">:</span> <span class="s2">&quot;light.tv_light&quot;</span>
 </pre></div>
 
 <p>Lights can also be clicked and held / long pressed to
- set brightness, temperature, effect, color etc. in a more info dialog:</p>
+set brightness, temperature, effect, color etc. in a more info dialog:</p>
 <p><img alt="More Info Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-dark.png" /></p>
 <h4 id="name_1">name<a class="headerlink" href="#name_1" title="Permanent link">&para;</a></h4>
 <p>The name is automatically pulled from <a href="https://www.home-assistant.io/">Home Assistant</a>, but you can set a
- custom name if you like.</p>
+custom name if you like.</p>
 <div class="codehilite"><pre><span></span>          <span class="s2">&quot;name&quot;</span><span class="err">:</span> <span class="s2">&quot;Night/Film Mode&quot;</span><span class="err">,</span>
 </pre></div>
 
 <h4 id="icon_1">icon<a class="headerlink" href="#icon_1" title="Permanent link">&para;</a></h4>
 <p>Icon shown in the middle of the card. Use <a href="https://materialdesignicons.com">Material Design Icons</a> to
- find the icon you want to use. For example, to use <code>thermometer-lines</code> add:</p>
+find the icon you want to use. For example, to use <code>thermometer-lines</code> add:</p>
 <div class="codehilite"><pre><span></span>          <span class="s2">&quot;icon&quot;</span><span class="err">:</span> <span class="s2">&quot;thermometer-lines&quot;</span>
 </pre></div>
 
@@ -1864,7 +1876,7 @@
 
 <h4 id="size">size<a class="headerlink" href="#size" title="Permanent link">&para;</a></h4>
 <p>Custom sizes for the card. Be aware that this will override the size for all
- screen sizes.</p>
+screen sizes.</p>
 <div class="codehilite"><pre><span></span>          <span class="s2">&quot;size&quot;</span><span class="err">:</span> <span class="p">{</span>
             <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0rem&quot;</span><span class="p">,</span>
             <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;6px&quot;</span><span class="p">,</span>
@@ -1880,13 +1892,13 @@
 <p>Custom size for icon</p>
 <h3 id="link">link<a class="headerlink" href="#link" title="Permanent link">&para;</a></h3>
 <p>A simple hyperlink that opens up another webpage in a new tab/window. To
- create a link, you must set the <code>type</code> to <code>link</code>. You can then set the <code>url</code>
- and <code>name</code> as appropriate. This looks and acts the same as a normal card.</p>
-<div class="codehilite"><pre><span></span>        <span class="p">{</span>
-          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;link&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Shinobi&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080&quot;</span>
-        <span class="p">}</span>
+create a link, you must set the <code>type</code> to <code>link</code>. You can then set the <code>url</code>
+and <code>name</code> as appropriate. This looks and acts the same as a normal card.</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;link&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Shinobi&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
 <h4 id="name_3">name<a class="headerlink" href="#name_3" title="Permanent link">&para;</a></h4>
@@ -1896,7 +1908,7 @@
 
 <h4 id="icon_3">icon<a class="headerlink" href="#icon_3" title="Permanent link">&para;</a></h4>
 <p>Icon shown in the middle of the card. Use <a href="https://materialdesignicons.com">Material Design Icons</a> to
- find the icon you want to use. For example, to use <code>thermometer-lines</code> add:</p>
+find the icon you want to use. For example, to use <code>thermometer-lines</code> add:</p>
 <div class="codehilite"><pre><span></span>          <span class="s2">&quot;icon&quot;</span><span class="err">:</span> <span class="s2">&quot;thermometer-lines&quot;</span>
 </pre></div>
 
@@ -1912,7 +1924,7 @@
 
 <h4 id="size_1">size<a class="headerlink" href="#size_1" title="Permanent link">&para;</a></h4>
 <p>Custom sizes for the card. Be aware that this will override the size for all
- screen sizes.</p>
+screen sizes.</p>
 <div class="codehilite"><pre><span></span>          <span class="s2">&quot;size&quot;</span><span class="err">:</span> <span class="p">{</span>
             <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0rem&quot;</span><span class="p">,</span>
             <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;4px&quot;</span>
@@ -1925,31 +1937,31 @@
 <p>Custom size for icon</p>
 <h3 id="camera">camera<a class="headerlink" href="#camera" title="Permanent link">&para;</a></h3>
 <p>You can add any camera image supported by your browser. Set the <code>type</code> to
- <code>camera</code> to use this. Set the <code>name</code> as appropriate. The camera type spans
- two cards. Clicking on the camera shows the camera's feed.</p>
-<div class="codehilite"><pre><span></span>        <span class="p">{</span>
-          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;camera&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Office&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;still_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/jpeg/groupid/name/s.jpg&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/mjpeg/groupid/name&quot;</span>
-        <span class="p">}</span>
+<code>camera</code> to use this. Set the <code>name</code> as appropriate. The camera type spans
+two cards. Clicking on the camera shows the camera's feed.</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;camera&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Office&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;still_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/jpeg/groupid/name/s.jpg&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/mjpeg/groupid/name&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
 <p>Another use for the <code>camera</code> type is to show an image, instead of a camera, so
- your screen acts as a photo frame.</p>
-<div class="codehilite"><pre><span></span>        <span class="p">{</span>
-          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;camera&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Lake Scene&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;still_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://images.pexels.com/photos/709881/pexels-photo-709881.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://images.pexels.com/photos/709881/pexels-photo-709881.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;</span>
-        <span class="p">}</span>
+your screen acts as a photo frame.</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;camera&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Lake Scene&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;still_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://images.pexels.com/photos/709881/pexels-photo-709881.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://images.pexels.com/photos/709881/pexels-photo-709881.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
 <p><img alt="Camera Picture Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/camera-picture.png" />
 <img alt="Camera Picture Full Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/camera-picture-full.png" /></p>
 <h4 id="url">url<a class="headerlink" href="#url" title="Permanent link">&para;</a></h4>
 <p>The url of the camera feed for use in full screen when the smaller camera card
- is clicked.</p>
+is clicked.</p>
 <div class="codehilite"><pre><span></span>          <span class="s2">&quot;url&quot;</span><span class="err">:</span> <span class="s2">&quot;http://myserver.local:8080/accesscode/mjpeg/groupid/name&quot;</span>
 </pre></div>
 
@@ -1965,11 +1977,11 @@
 
 <h3 id="iframe">iframe<a class="headerlink" href="#iframe" title="Permanent link">&para;</a></h3>
 <p>You can add any webpage that can be embedded.</p>
-<div class="codehilite"><pre><span></span>        <span class="p">{</span>
-          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;iframe&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Wind&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://embed.windy.com/embed2.html?zoom=5&quot;</span>
-        <span class="p">}</span>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;iframe&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Wind&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://embed.windy.com/embed2.html?zoom=5&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
 <h4 id="url_1">url<a class="headerlink" href="#url_1" title="Permanent link">&para;</a></h4>
@@ -2006,7 +2018,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../login/" title="Login" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../configui/" title="Configuration UI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2015,7 +2027,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Login
+                Configuration UI
               </span>
             </div>
           </a>

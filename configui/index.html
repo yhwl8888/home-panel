@@ -13,7 +13,7 @@
         <meta name="description" content="A touch-compatible web-app for controlling the home">
       
       
-        <link rel="canonical" href="https://timmo.dev/home-panel/themes/">
+        <link rel="canonical" href="https://timmo.dev/home-panel/configui/">
       
       
         <meta name="author" content="Timmo">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Custom Themes - Home Panel Docs</title>
+        <title>Configuration UI - Home Panel Docs</title>
       
     
     
@@ -108,7 +108,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#custom-themes" tabindex="1" class="md-skip">
+      <a href="#configuration-ui" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -133,7 +133,7 @@
               Home Panel Docs
             </span>
             <span class="md-header-nav__topic">
-              Custom Themes
+              Configuration UI
             </span>
           
         </div>
@@ -322,11 +322,105 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../configui/" title="Configuration UI" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Configuration UI
+      </label>
+    
+    <a href="./" title="Configuration UI" class="md-nav__link md-nav__link--active">
       Configuration UI
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#switching-to-config-ui" title="Switching to Config UI" class="md-nav__link">
+    Switching to Config UI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-a-card" title="Editing a card" class="md-nav__link">
+    Editing a card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-a-group" title="Editing a group" class="md-nav__link">
+    Editing a group
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-a-page" title="Editing a page" class="md-nav__link">
+    Editing a page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-themes" title="Editing themes" class="md-nav__link">
+    Editing themes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-the-header" title="Editing the header" class="md-nav__link">
+    Editing the header
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-card" title="Adding a card" class="md-nav__link">
+    Adding a card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-group" title="Adding a group" class="md-nav__link">
+    Adding a group
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-page" title="Adding a page" class="md-nav__link">
+    Adding a page
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -346,124 +440,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Custom Themes
-      </label>
-    
-    <a href="./" title="Custom Themes" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../themes/" title="Custom Themes" class="md-nav__link">
       Custom Themes
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#name" title="name" class="md-nav__link">
-    name
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#base" title="base" class="md-nav__link">
-    base
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overrides" title="overrides" class="md-nav__link">
-    overrides
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#colors" title="Colors" class="md-nav__link">
-    Colors
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#material-color" title="Material Color" class="md-nav__link">
-    Material Color
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hexadecimal-color" title="Hexadecimal color" class="md-nav__link">
-    Hexadecimal color
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#image" title="Image" class="md-nav__link">
-    Image
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-themes" title="Example Themes" class="md-nav__link">
-    Example Themes
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#midnight" title="Midnight" class="md-nav__link">
-    Midnight
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#forest" title="Forest" class="md-nav__link">
-    Forest
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -541,84 +522,65 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#name" title="name" class="md-nav__link">
-    name
+  <a href="#switching-to-config-ui" title="Switching to Config UI" class="md-nav__link">
+    Switching to Config UI
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#base" title="base" class="md-nav__link">
-    base
+  <a href="#editing-a-card" title="Editing a card" class="md-nav__link">
+    Editing a card
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#overrides" title="overrides" class="md-nav__link">
-    overrides
+  <a href="#editing-a-group" title="Editing a group" class="md-nav__link">
+    Editing a group
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#colors" title="Colors" class="md-nav__link">
-    Colors
+  <a href="#editing-a-page" title="Editing a page" class="md-nav__link">
+    Editing a page
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#material-color" title="Material Color" class="md-nav__link">
-    Material Color
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hexadecimal-color" title="Hexadecimal color" class="md-nav__link">
-    Hexadecimal color
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#image" title="Image" class="md-nav__link">
-    Image
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-themes" title="Example Themes" class="md-nav__link">
-    Example Themes
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#midnight" title="Midnight" class="md-nav__link">
-    Midnight
+  <a href="#editing-themes" title="Editing themes" class="md-nav__link">
+    Editing themes
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#forest" title="Forest" class="md-nav__link">
-    Forest
+      
+        <li class="md-nav__item">
+  <a href="#editing-the-header" title="Editing the header" class="md-nav__link">
+    Editing the header
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-card" title="Adding a card" class="md-nav__link">
+    Adding a card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-group" title="Adding a group" class="md-nav__link">
+    Adding a group
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-page" title="Adding a page" class="md-nav__link">
+    Adding a page
+  </a>
   
 </li>
       
@@ -638,176 +600,46 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/timmo001/home-panel/edit/master/docs/docs/themes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/timmo001/home-panel/edit/master/docs/docs/configui.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="custom-themes">Custom Themes<a class="headerlink" href="#custom-themes" title="Permanent link">&para;</a></h1>
-<p>This section covers creating custom themes in the config.</p>
-<p>Start by adding an array called <code>custom</code> under the <code>theme</code> object in the
- config or use the <a href="https://timmo.dev/home-panel/template/">template</a>.</p>
-<div class="codehilite"><pre><span></span>  <span class="s2">&quot;theme&quot;</span><span class="err">:</span> <span class="p">{</span>
-    <span class="nt">&quot;custom&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;name&quot;</span><span class="err">:</span> <span class="s2">&quot;My Theme&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;base&quot;</span><span class="err">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;overrides&quot;</span><span class="err">:</span> <span class="p">{</span>
-
-        <span class="p">}</span>
-    <span class="p">]</span>
-  <span class="p">}</span>
-</pre></div>
-
-<h2 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h2>
-<p>The name of your theme</p>
-<h2 id="base">base<a class="headerlink" href="#base" title="Permanent link">&para;</a></h2>
-<p>The theme to use as this theme's base. Start with either <code>light</code> or <code>dark</code> and
- expand from there</p>
-<h2 id="overrides">overrides<a class="headerlink" href="#overrides" title="Permanent link">&para;</a></h2>
-<p>This is where you edit the theme. Here is a table of all parts of the theme
- that can be overridden/configured. Replace the dots (.) with an object.
- (<code>"backgrounds": { ... }</code>)</p>
-<table>
-<thead>
-<tr>
-<th>Item</th>
-<th>What this configures/overrides</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>type</td>
-<td>The top level base. This is the high level theme which can only be <code>light</code> or <code>dark</code>. Generally this isn't required when using the light or dark theme as the <code>base</code></td>
-</tr>
-<tr>
-<td>primary</td>
-<td>The primary color that the UI uses. This is used for sliders, dropdowns, etc.</td>
-</tr>
-<tr>
-<td>secondary</td>
-<td>The secondary color that the UI uses.</td>
-</tr>
-<tr>
-<td>backgrounds.main</td>
-<td>The main background. This can be a color or a picture. You must use css formatting however, so to use an image, use <code>url(https://myimageaddress...)</code></td>
-</tr>
-<tr>
-<td>backgrounds.default</td>
-<td>The default background that is not defined in this section</td>
-</tr>
-<tr>
-<td>backgrounds.navigation</td>
-<td>The background that the bottom navigation uses</td>
-</tr>
-<tr>
-<td>backgrounds.card.on</td>
-<td>The color of the card when on. i.e. the light or switch is turned on.</td>
-</tr>
-<tr>
-<td>backgrounds.card.off</td>
-<td>The color of the card when switched off or not able to switch on</td>
-</tr>
-<tr>
-<td>backgrounds.card.disabled</td>
-<td>The color of the card when the entity is unavailable.</td>
-</tr>
-<tr>
-<td>backgrounds.card.alarm.home</td>
-<td>The color of an alarm card and it is armed home.</td>
-</tr>
-<tr>
-<td>backgrounds.card.alarm.away</td>
-<td>The color of an alarm card and it is armed away.</td>
-</tr>
-<tr>
-<td>backgrounds.card.alarm.triggered</td>
-<td>The color of an alarm card and the alarm has been triggered.</td>
-</tr>
-<tr>
-<td>text.light</td>
-<td>The color of the lighter text areas</td>
-</tr>
-<tr>
-<td>text.main</td>
-<td>The color of the main text areas</td>
-</tr>
-<tr>
-<td>text.icon</td>
-<td>The color of the icons. This is for the icons on the cards, if added.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="colors">Colors<a class="headerlink" href="#colors" title="Permanent link">&para;</a></h2>
-<p>To set the color you can use any color using the hex value, Material colors or
- even images for backgrounds.</p>
-<h3 id="material-color">Material Color<a class="headerlink" href="#material-color" title="Permanent link">&para;</a></h3>
-<p>To use Material colors, you can use the <a href="https://material.io/design/color/#tools-for-picking-colors">Material Design Pallette</a>
- to find the color you want, then using them like so:</p>
-<div class="codehilite"><pre><span></span>            <span class="s2">&quot;main&quot;</span><span class="err">:</span> <span class="s2">&quot;blueGrey[500]&quot;</span><span class="err">,</span>
-</pre></div>
-
-<p>See how <code>Blue Grey</code> becomes camel-cased as <code>blueGrey</code>. The <code>[500]</code> is the
- exact color. This would result in <code>#607D8B</code>.</p>
-<h3 id="hexadecimal-color">Hexadecimal color<a class="headerlink" href="#hexadecimal-color" title="Permanent link">&para;</a></h3>
-<p>You can use hexadecimal values to set colors using the usual <code>#RRGGBB</code> format.</p>
-<h3 id="image">Image<a class="headerlink" href="#image" title="Permanent link">&para;</a></h3>
-<p>For backgrounds, you can set an image for the background if you like.
- The only caveat to this is that you have to use css formatting.</p>
-<p>To add an image set it as a <code>url</code> like so:</p>
-<div class="codehilite"><pre><span></span><span class="s2">&quot;main&quot;</span><span class="err">:</span> <span class="s2">&quot;url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg)&quot;</span><span class="err">,</span>
-</pre></div>
-
-<p>Make sure to put the url in brackets like the above.</p>
-<h2 id="example-themes">Example Themes<a class="headerlink" href="#example-themes" title="Permanent link">&para;</a></h2>
-<p>Here are some example themes you can use or expand on.
- Contributions are welcome!</p>
-<h3 id="midnight">Midnight<a class="headerlink" href="#midnight" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>      <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Midnight&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;overrides&quot;</span><span class="p">:</span> <span class="p">{</span>
-          <span class="nt">&quot;primary&quot;</span><span class="p">:</span> <span class="s2">&quot;pink&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;backgrounds&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;#383c45&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="s2">&quot;#383c45&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;card&quot;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&quot;on&quot;</span><span class="p">:</span> <span class="s2">&quot;pink[600]&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;off&quot;</span><span class="p">:</span> <span class="s2">&quot;#434954&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;disabled&quot;</span><span class="p">:</span> <span class="s2">&quot;#7f848e&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;alarm&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;home&quot;</span><span class="p">:</span> <span class="s2">&quot;pink[600]&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;away&quot;</span><span class="p">:</span> <span class="s2">&quot;pink[600]&quot;</span>
-              <span class="p">}</span>
-            <span class="p">}</span>
-          <span class="p">},</span>
-          <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;light&quot;</span><span class="p">:</span> <span class="s2">&quot;grey[50]&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;grey[100]&quot;</span>
-          <span class="p">}</span>
-        <span class="p">}</span>
-      <span class="p">}</span>
-</pre></div>
-
-<p><img alt="Midnight Theme" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/midnight-theme.png" /></p>
-<h3 id="forest">Forest<a class="headerlink" href="#forest" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>      <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Forest&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;light&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;overrides&quot;</span><span class="p">:</span> <span class="p">{</span>
-          <span class="nt">&quot;backgrounds&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg)&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;card&quot;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&quot;on&quot;</span><span class="p">:</span> <span class="s2">&quot;lightGreen[700]&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;off&quot;</span><span class="p">:</span> <span class="s2">&quot;green[50]&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;alarm&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;home&quot;</span><span class="p">:</span> <span class="s2">&quot;lightGreen[700]&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;away&quot;</span><span class="p">:</span> <span class="s2">&quot;lightGreen[700]&quot;</span>
-              <span class="p">}</span>
-            <span class="p">}</span>
-          <span class="p">}</span>
-        <span class="p">}</span>
-      <span class="p">}</span>
-</pre></div>
-
-<p><img alt="Forest Theme" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/forest-theme.png" /></p>
+                <h1 id="configuration-ui">Configuration UI<a class="headerlink" href="#configuration-ui" title="Permanent link">&para;</a></h1>
+<p>Everything that you can edit in the configuration file, can be edited in the
+UI. <em>(If there is anything missing, please open an <a href="https://github.com/timmo001/home-panel/issues/new?template=feature-request.md">issue</a>)</em></p>
+<h2 id="switching-to-config-ui">Switching to Config UI<a class="headerlink" href="#switching-to-config-ui" title="Permanent link">&para;</a></h2>
+<p>To start editing your UI, click the edit config button in the header section:</p>
+<p><img alt="Edit Config" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-edit.gif" /></p>
+<h2 id="editing-a-card">Editing a card<a class="headerlink" href="#editing-a-card" title="Permanent link">&para;</a></h2>
+<p>Enter the Config UI and click on a card. You can then edit the type, name etc.
+as you like. You can also delete the card if you want.</p>
+<p><img alt="Editing a card" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-edit-card.gif" /></p>
+<h2 id="editing-a-group">Editing a group<a class="headerlink" href="#editing-a-group" title="Permanent link">&para;</a></h2>
+<p>Enter the Config UI and click on a group's name. You can then edit the name,
+width and page number. You can also delete the group which will also delete
+any cards you have inside that group.</p>
+<p><img alt="Editing a group" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-edit-group.gif" /></p>
+<h2 id="editing-a-page">Editing a page<a class="headerlink" href="#editing-a-page" title="Permanent link">&para;</a></h2>
+<p>Enter the Config UI and click and hold a page. You can then edit the page's
+name and icon. You can also delete the page which will also delete
+any groups that are using that page number.</p>
+<p><img alt="Editing a page" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-edit-page.gif" /></p>
+<h2 id="editing-themes">Editing themes<a class="headerlink" href="#editing-themes" title="Permanent link">&para;</a></h2>
+<p>Enter the Config UI and click the theme icon. This will then give you access
+to edit your UI and also add and edit custom themes.</p>
+<p><img alt="Editing themes" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-edit-theme.gif" /></p>
+<h2 id="editing-the-header">Editing the header<a class="headerlink" href="#editing-the-header" title="Permanent link">&para;</a></h2>
+<p>Enter the Config UI and click the icon in the header. This will then give you
+access to edit the header to your liking and even disable individual elements.</p>
+<p><img alt="Editing the header" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-edit-header.gif" /></p>
+<h2 id="adding-a-card">Adding a card<a class="headerlink" href="#adding-a-card" title="Permanent link">&para;</a></h2>
+<p>Enter the Config UI and click the card with the + that appears.</p>
+<p><img alt="Adding a card" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-add-card.gif" /></p>
+<h2 id="adding-a-group">Adding a group<a class="headerlink" href="#adding-a-group" title="Permanent link">&para;</a></h2>
+<p>Enter the Config UI, go to the end of the page and click the + that is shown.</p>
+<p><img alt="Adding a group" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-add-group.gif" /></p>
+<h2 id="adding-a-page">Adding a page<a class="headerlink" href="#adding-a-page" title="Permanent link">&para;</a></h2>
+<p>Enter the Config UI and click the + on the navigation bar.</p>
+<p><img alt="Adding a page" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/config-add-page.gif" /></p>
                 
                   
                 
@@ -828,7 +660,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../configuration/" title="Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../login/" title="Login" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -837,19 +669,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Configuration
+                Login
               </span>
             </div>
           </a>
         
         
-          <a href="../template/" title="Template" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../configuration/" title="Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Template
+                Configuration
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
