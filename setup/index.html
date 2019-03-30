@@ -717,7 +717,6 @@
 <li>Install <a href="https://www.docker.com/community-edition">Docker</a> and
  <a href="https://docs.docker.com/compose/install/">Docker Compose</a></li>
 <li>Create a directory for your compose file. For example, <code>home-panel</code></li>
-<li>Create a <code>config.json</code> using the <a href="https://timmo.dev/home-panel/template/">template</a></li>
 <li>Create a <code>docker-compose.yml</code> file:</li>
 </ul>
 <h3 id="ssl">SSL<a class="headerlink" href="#ssl" title="Permanent link">&para;</a></h3>
@@ -740,7 +739,6 @@ Change the environment variables to your own Home Assistant details</p>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3234:3234</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:8234</span>
     <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/home-panel-config.json:/data/config.json</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl/fullchain.pem:/data/ssl/fullchain.pem</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl/privkey.pem:/data/ssl/privkey.pem</span>
 </pre></div>
@@ -761,7 +759,6 @@ Change the environment variables to your own Home Assistant details</p>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3234:3234</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:8234</span>
     <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PATH_TO_CONFIG/home-panel-config.json:/data/config.json</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl/fullchain.pem:/data/ssl/fullchain.pem</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl/privkey.pem:/data/ssl/privkey.pem</span>
 </pre></div>
@@ -770,7 +767,6 @@ Change the environment variables to your own Home Assistant details</p>
 <hr />
 <ul>
 <li>Install <a href="https://www.docker.com/community-edition">Docker</a></li>
-<li>Create a <code>config.json</code> using the <a href="https://timmo.dev/home-panel/template/">template</a></li>
 <li>Run image</li>
 </ul>
 <h3 id="ssl_1">SSL<a class="headerlink" href="#ssl_1" title="Permanent link">&para;</a></h3>
@@ -783,7 +779,6 @@ Change the environment variables to your own Home Assistant details</p>
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
   -p <span class="m">3234</span>:3234 <span class="se">\</span>
   -p <span class="m">8234</span>:8234 <span class="se">\</span>
-  -v PATH_TO_CONFIG/home-panel-config.json:/data/config.json
   -v ~/ssl/fullchain.pem:/data/ssl/fullchain.pem
   -v ~/ssl/privkey.pem:/data/ssl/privkey.pem
   -e <span class="nv">SSL_CERTFILE</span><span class="o">=</span>fullchain.pem <span class="se">\</span>
@@ -800,7 +795,6 @@ Change the environment variables to your own Home Assistant details</p>
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
   -p <span class="m">3234</span>:3234 <span class="se">\</span>
   -p <span class="m">8234</span>:8234 <span class="se">\</span>
-  -v PATH_TO_CONFIG/home-panel-config.json:/data/config.json
   timmo001/home-panel
 </pre></div>
 
@@ -811,8 +805,6 @@ Change the environment variables to your own Home Assistant details</p>
 <li>First clone the
   <a href="https://github.com/timmo001/home-panel-api">Home Assistant API</a> repository</li>
 <li>Checkout the version you want via releases</li>
-<li>Copy <code>files/config.template.json</code> to <code>files/config.json</code></li>
-<li>Update <code>files/config.json</code> to your configuration</li>
 <li>Install packages</li>
 </ul>
 <div class="codehilite"><pre><span></span>yarn install
