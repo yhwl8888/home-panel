@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-\.]+">
       
       <link rel="shortcut icon" href="../favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -183,7 +183,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -277,6 +277,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../home-assistant/" title="Home Assistant" class="md-nav__link">
+      Home Assistant
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -285,72 +297,12 @@
       
       
       
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Customization
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Customization
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
 
 
   <li class="md-nav__item">
     <a href="../configui/" title="Configuration UI" class="md-nav__link">
       Configuration UI
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../configuration.md" title="Configuration" class="md-nav__link">
-      Configuration
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../themes/" title="Custom Themes" class="md-nav__link">
-      Custom Themes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../template/" title="Template" class="md-nav__link">
-      Template
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -387,28 +339,21 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-the-docs" title="Check the docs" class="md-nav__link">
+  <a href="#check-the-docs" class="md-nav__link">
     Check the docs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-the-latest-version" title="Use the latest version" class="md-nav__link">
+  <a href="#use-the-latest-version" class="md-nav__link">
     Use the latest version
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#before-posting-your-issue" title="Before posting your issue" class="md-nav__link">
-    Before posting your issue
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#im-still-having-issues" title="I'm still having issues" class="md-nav__link">
+  <a href="#im-still-having-issues" class="md-nav__link">
     I'm still having issues
   </a>
   
@@ -422,6 +367,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../issue-posting/" title="Posting an Issue" class="md-nav__link">
+      Posting an Issue
+    </a>
   </li>
 
     
@@ -470,28 +427,21 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-the-docs" title="Check the docs" class="md-nav__link">
+  <a href="#check-the-docs" class="md-nav__link">
     Check the docs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-the-latest-version" title="Use the latest version" class="md-nav__link">
+  <a href="#use-the-latest-version" class="md-nav__link">
     Use the latest version
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#before-posting-your-issue" title="Before posting your issue" class="md-nav__link">
-    Before posting your issue
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#im-still-having-issues" title="I'm still having issues" class="md-nav__link">
+  <a href="#im-still-having-issues" class="md-nav__link">
     I'm still having issues
   </a>
   
@@ -534,28 +484,12 @@ docker pull timmo001/home-panel-api
  browser.</p>
 <p>If running natively, checkout the latest version from the release page for
  the <a href="https://github.com/timmo001/home-panel/releases">app</a> and the <a href="https://github.com/timmo001/home-panel-api/releases">api</a> and rerun the app.</p>
-<h2 id="before-posting-your-issue">Before posting your issue<a class="headerlink" href="#before-posting-your-issue" title="Permanent link">&para;</a></h2>
-<p>Before posting your issue, make sure you check the logs for any errors.
- You may be able to find out the issue for yourself.</p>
-<p>If your issue is inside the webapp, first check the developer console.
- To do this press <code>F12</code> on the keyboard if you are running Chrome.</p>
-<p>Also check the main app logs. With Docker Compose, <code>cd</code> into the
-directory containing <code>docker-compose.yml</code> and run:</p>
-<div class="codehilite"><pre><span></span>docker-compose logs -f
-</pre></div>
-
-<p>If using Docker, run:</p>
-<div class="codehilite"><pre><span></span>docker logs -f APP_CONTAINER_ID
-docker logs -f API_CONTAINER_ID
-</pre></div>
-
-<p>If you are using the Hassio add-on, you can check the logs in the add-on page.</p>
 <h2 id="im-still-having-issues">I'm still having issues<a class="headerlink" href="#im-still-having-issues" title="Permanent link">&para;</a></h2>
 <p>If you are still stuck, post any logs you can gather from the steps above
  to the <a href="https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597">forum thread</a> where the community will be able to help you.
  Make sure to remove any personal data such as a public address or password.</p>
-<p>You can also post an issue to the <a href="https://github.com/timmo001/home-panel/issues">GitHub repository</a>. If your issue is
- related to the Hassio add-on, post your issue <a href="https://github.com/timmo001/addon-home-panel/issues">here</a></p>
+<p>You can also post an issue on the GitHub repositories if you have uncovered a
+ bug.</p>
                 
                   
                 
@@ -576,7 +510,7 @@ docker logs -f API_CONTAINER_ID
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../template/" title="Template" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../configui/" title="Configuration UI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -585,19 +519,19 @@ docker logs -f API_CONTAINER_ID
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Template
+                Configuration UI
               </span>
             </div>
           </a>
         
         
-          <a href="../contributing/" title="Contributing" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../issue-posting/" title="Posting an Issue" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Contributing
+                Posting an Issue
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
