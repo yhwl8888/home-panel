@@ -605,8 +605,12 @@ Change the environment variables to your own Home Assistant details</p>
     <span class="nt">ports</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:8234</span>
     <span class="nt">volumes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">home_panel_data:/data</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl/fullchain.pem:/data/ssl/fullchain.pem</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">~/ssl/privkey.pem:/data/ssl/privkey.pem</span>
+
+<span class="nt">volumes</span><span class="p">:</span>
+  <span class="nt">home_panel_data</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
 </pre></div>
 
 <h3 id="non-ssl">Non-SSL<a class="headerlink" href="#non-ssl" title="Permanent link">&para;</a></h3>
@@ -623,12 +627,23 @@ Change the environment variables to your own Home Assistant details</p>
     <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">timmo001/home-panel</span>
     <span class="nt">ports</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8234:8234</span>
+    <span class="nt">volumes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">home_panel_data:/data</span>
+
+<span class="nt">volumes</span><span class="p">:</span>
+  <span class="nt">home_panel_data</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
 </pre></div>
 
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
 <hr />
 <ul>
 <li>Install <a href="https://www.docker.com/community-edition">Docker</a></li>
+<li>Create volume</li>
+</ul>
+<div class="codehilite"><pre><span></span>docker volume create home_panel_data
+</pre></div>
+
+<ul>
 <li>Run image</li>
 </ul>
 <h3 id="ssl_1">SSL<a class="headerlink" href="#ssl_1" title="Permanent link">&para;</a></h3>
@@ -640,6 +655,7 @@ Change the environment variables to your own Home Assistant details</p>
 </div>
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
   -p <span class="m">8234</span>:8234 <span class="se">\</span>
+  -v home_panel_data:/data
   -v ~/ssl/fullchain.pem:/data/ssl/fullchain.pem
   -v ~/ssl/privkey.pem:/data/ssl/privkey.pem
   -e <span class="nv">SSL_CERTFILE</span><span class="o">=</span>fullchain.pem <span class="se">\</span>
@@ -654,6 +670,7 @@ Change the environment variables to your own Home Assistant details</p>
  world.</p>
 </div>
 <div class="codehilite"><pre><span></span>docker run -d <span class="se">\</span>
+  -v home_panel_data:/data
   -p <span class="m">8234</span>:8234 <span class="se">\</span>
   timmo001/home-panel
 </pre></div>
