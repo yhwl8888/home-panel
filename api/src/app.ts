@@ -17,6 +17,7 @@ import services from './services';
 import appHooks from './app.hooks';
 import channels from './channels';
 import authentication from './authentication';
+import watchForCast from './cast';
 // Don't remove this comment. It's needed to format import lines nicely.
 
 const app: Application = express(feathers());
@@ -69,5 +70,7 @@ app.get('/*', (_req, res) =>
 );
 
 app.set('trust proxy', true);
+
+watchForCast();
 
 export default app;
