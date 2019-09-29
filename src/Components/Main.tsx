@@ -8,9 +8,10 @@ import PropTypes from 'prop-types';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import Slide from '@material-ui/core/Slide';
 
+import { CommandType } from './Utils/Command';
 import { ConfigProps } from './Configuration/Config';
 import { parseTokens } from './HomeAssistant/Utils/Auth';
-import { CommandType } from './Utils/Command';
+import CastDevices from './Cast/CastDevices';
 import clone from '../Utils/clone';
 import Configuration from './Configuration/Configuration';
 import Drawer from './Drawer/Drawer';
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 interface MainProps extends RouteComponentProps, ConfigProps {
+  apiClient: any;
   command: CommandType;
   loginCredentials: any;
   mouseMoved: boolean;
@@ -60,6 +62,7 @@ interface MainProps extends RouteComponentProps, ConfigProps {
 
 function Main(props: MainProps) {
   const [back, setBack] = React.useState(false);
+  const [castDevices, setCastDevices] = React.useState();
   const [hassAuth, setHassAuth] = React.useState();
   const [hassConfig, setHassConfig] = React.useState();
   const [hassConnected, setHassConnected] = React.useState(false);
@@ -152,6 +155,22 @@ function Main(props: MainProps) {
     if (props.command && !props.location.state.overview)
       props.history.replace({ ...props.location, state: { overview: true } });
   }, [props.command, props.history, props.location]);
+  function handleCast() {
+    (async () => {
+      const castService = await props.apiClient.service('cast');
+      let data = await castService.get(0);
+      if (data) {
+        setCastDevices(data);
+      }
+    })();
+  }
+
+  function handleCastChosen(host: string, url: string) {
+    (async () => {
+      const castService = await props.apiClient.service('cast');
+      await castService.create({ host, url });
+    })();
+  }
 
   const classes = useStyles();
 
@@ -192,6 +211,7 @@ function Main(props: MainProps) {
         back={back}
         currentPage={currentPage}
         editing={editing}
+        handleCast={handleCast}
         hassConnected={hassConnected}
         mouseMoved={props.mouseMoved}
         userInitials={userInitials}
@@ -256,6 +276,9 @@ function Main(props: MainProps) {
             />
           )}
         </main>
+      )}
+      {castDevices && (
+        <CastDevices devices={castDevices} handleChosen={handleCastChosen} />
       )}
     </div>
   );
