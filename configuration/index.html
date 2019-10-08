@@ -13,7 +13,7 @@
         <meta name="description" content="A touch-compatible web-app for controlling the home">
       
       
-        <link rel="canonical" href="https://timmo.dev/home-panel/troubleshooting/">
+        <link rel="canonical" href="https://timmo.dev/home-panel/configuration/">
       
       
         <meta name="author" content="Timmo">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Troubleshooting - Home Panel Docs</title>
+        <title>Configuration Screen - Home Panel Docs</title>
       
     
     
@@ -91,7 +91,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#troubleshooting" tabindex="1" class="md-skip">
+      <a href="#configuration-screen" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -117,7 +117,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Troubleshooting
+                Configuration Screen
               
             </span>
           
@@ -298,10 +298,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Configuration
@@ -329,11 +331,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../configuration/" title="Configuration Screen" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Configuration Screen
+      </label>
+    
+    <a href="./" title="Configuration Screen" class="md-nav__link md-nav__link--active">
       Configuration Screen
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#editing-the-theme" class="md-nav__link">
+    Editing the theme
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -406,63 +446,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Troubleshooting
-      </label>
-    
-    <a href="./" title="Troubleshooting" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../troubleshooting/" title="Troubleshooting" class="md-nav__link">
       Troubleshooting
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#check-the-docs" class="md-nav__link">
-    Check the docs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-the-latest-version" class="md-nav__link">
-    Use the latest version
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#im-still-having-issues" class="md-nav__link">
-    I'm still having issues
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -523,22 +511,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-the-docs" class="md-nav__link">
-    Check the docs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-the-latest-version" class="md-nav__link">
-    Use the latest version
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#im-still-having-issues" class="md-nav__link">
-    I'm still having issues
+  <a href="#editing-the-theme" class="md-nav__link">
+    Editing the theme
   </a>
   
 </li>
@@ -559,33 +533,26 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/timmo001/home-panel/edit/master/docs/docs/troubleshooting.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/timmo001/home-panel/edit/master/docs/docs/configuration.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
-<h2 id="check-the-docs">Check the docs<a class="headerlink" href="#check-the-docs" title="Permanent link">&para;</a></h2>
-<p>Make sure you review the setup docs. These will always be the most up to date
- source of how to setup the app. It is always worth checking your config
- against the <a href="https://timmo.dev/home-panel/setup/">setup</a> docs.</p>
-<p>For login and account issues, check against the <a href="https://timmo.dev/home-panel/login/">login</a> docs.</p>
-<h2 id="use-the-latest-version">Use the latest version<a class="headerlink" href="#use-the-latest-version" title="Permanent link">&para;</a></h2>
-<p>If your are facing any issues logging in, connecting etc. you should first
- make sure you are running the latest version.</p>
-<p>If you are running Docker, run:</p>
-<div class="codehilite"><pre><span></span>docker pull timmo001/home-panel
-docker pull timmo001/home-panel-api
-</pre></div>
-
-<p>and run the containers again. You may have to clear the cache/cookies in your
- browser.</p>
-<p>If running natively, checkout the latest version from the release page for
- the <a href="https://github.com/timmo001/home-panel/releases">app</a> and the <a href="https://github.com/timmo001/home-panel-api/releases">api</a> and rerun the app.</p>
-<h2 id="im-still-having-issues">I'm still having issues<a class="headerlink" href="#im-still-having-issues" title="Permanent link">&para;</a></h2>
-<p>If you are still stuck, post any logs you can gather from the steps above
- to the <a href="https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597">forum thread</a> where the community will be able to help you.
- Make sure to remove any personal data such as a public address or password.</p>
-<p>You can also post an issue on the GitHub repositories if you have uncovered a
- bug.</p>
+                <h1 id="configuration-screen">Configuration Screen<a class="headerlink" href="#configuration-screen" title="Permanent link">&para;</a></h1>
+<p>The configuration screen can be accessed via the navigation drawer. From there
+ you can edit the layout and theme of the app.</p>
+<p><img alt="Configuration Main Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/screen-configuration-main.png" /></p>
+<p><img alt="Configuration Header Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/screen-configuration-header.png" /></p>
+<h2 id="editing-the-theme">Editing the theme<a class="headerlink" href="#editing-the-theme" title="Permanent link">&para;</a></h2>
+<p>You can change the look and feel of the app by changing the items in this
+ section.</p>
+<p><img alt="Configuration Theme Screenshot" src="https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/screen-configuration-header.gif" /></p>
+<p>From here you can change things like the base, primary color palette,
+ background, default card background etc.</p>
+<div class="admonition info">
+<p>You can use the color picker provided or use your own
+<a href="https://www.w3schools.com/cssref/css3_pr_background.asp">css</a> if you like. For example, the following
+will grab an image from unsplash with any image containing the word space:
+<code>url(https://source.unsplash.com/1920x1080/?space)</code></p>
+</div>
                 
                   
                 
@@ -606,7 +573,7 @@ docker pull timmo001/home-panel-api
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../faq/" title="Frequently Asked Questions" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../configui/" title="Configuration UI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -615,19 +582,19 @@ docker pull timmo001/home-panel-api
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Frequently Asked Questions
+                Configuration UI
               </span>
             </div>
           </a>
         
         
-          <a href="../issue-posting/" title="Posting an Issue" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../showcase/contributing/" title="Contributing" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Posting an Issue
+                Contributing
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
