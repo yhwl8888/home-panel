@@ -166,11 +166,13 @@ function Main(props: MainProps) {
     })();
   }
 
-  function handleCastChosen(host: string, url: string) {
-    (async () => {
-      const castService = await props.apiClient.service('cast');
-      await castService.create({ host, url });
-    })();
+  function handleCastChosen(host?: string, url?: string) {
+    if (host && url)
+      (async () => {
+        const castService = await props.apiClient.service('cast');
+        await castService.create({ host, url });
+      })();
+    setCastDevices(null);
   }
 
   const classes = useStyles();

@@ -1,7 +1,9 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import List from '@material-ui/core/List';
@@ -16,7 +18,7 @@ export type CastDevice = {
 
 interface CastDevicesProps {
   devices: CastDevice[];
-  handleChosen: (host: string, url: string) => void;
+  handleChosen: (host?: string, url?: string) => void;
 }
 
 function CastDevices(props: CastDevicesProps) {
@@ -30,8 +32,12 @@ function CastDevices(props: CastDevicesProps) {
     props.handleChosen(device.host, url);
   };
 
+  function handleClose() {
+    props.handleChosen();
+  }
+
   return (
-    <Dialog open>
+    <Dialog open onClose={handleClose}>
       <DialogTitle>Select device</DialogTitle>
       <DialogContent>
         <TextField
@@ -49,7 +55,15 @@ function CastDevices(props: CastDevicesProps) {
             <ListItemText primary={`${device.name} (${device.host})`} />
           </ListItem>
         ))}
+        {props.devices.length < 1 && (
+          <ListItem button>
+            <ListItemText primary="No devices found" />
+          </ListItem>
+        )}
       </List>
+      <DialogActions>
+        <Button onClick={handleClose}>Close</Button>
+      </DialogActions>
     </Dialog>
   );
 }
