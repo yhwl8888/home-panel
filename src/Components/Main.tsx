@@ -155,6 +155,7 @@ function Main(props: MainProps) {
     if (props.command && !props.location.state.overview)
       props.history.replace({ ...props.location, state: { overview: true } });
   }, [props.command, props.history, props.location]);
+
   function handleCast() {
     (async () => {
       const castService = await props.apiClient.service('cast');

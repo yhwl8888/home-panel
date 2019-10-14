@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Avatar from '@material-ui/core/Avatar';
-import ButtonBase from '@material-ui/core/ButtonBase';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
@@ -159,7 +158,7 @@ function ResponsiveDrawer(props: ResponsiveDrawerProps) {
   }
 
   function handleCast() {
-    setMobileOpen(false);
+    setDrawerOpen(false);
     props.handleCast();
   }
 
@@ -218,15 +217,31 @@ function ResponsiveDrawer(props: ResponsiveDrawerProps) {
               handleHassLogin={props.handleHassLogin}
             />
           )}
-          <ListItem>
-            <ButtonBase className={classes.castContainer} onClick={handleCast}>
-              <CardMedia
-                className={classes.media}
-                image={Cast}
-                title="Log in to Home Assistant"
-              />
-            </ButtonBase>
-          </ListItem>
+          {props.config.general.drawer_type === 'persistent_icons_only' ||
+            (props.config.general.drawer_type === 'permanent_icons_only' ? (
+              <ListItem
+                button
+                className={classes.castContainer}
+                onClick={handleCast}>
+                <ListItemIcon>
+                  <span
+                    className={classnames('mdi', 'mdi-cast', classes.icon)}
+                  />
+                </ListItemIcon>
+                <ListItemText primary="Cast" />
+              </ListItem>
+            ) : (
+              <ListItem
+                button
+                className={classes.castContainer}
+                onClick={handleCast}>
+                <CardMedia
+                  className={classes.media}
+                  image={Cast}
+                  title="Cast"
+                />
+              </ListItem>
+            ))}
           <ListItem button onClick={props.handleLogout}>
             <ListItemIcon>
               <span className={classnames('mdi', 'mdi-logout', classes.icon)} />
